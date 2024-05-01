@@ -70,7 +70,8 @@ p {
 }
 
 footer {
-    background-color: #FD9CA1;
+    background-color: #69A197;
+    color: darkslategray;
     padding: 0.5%;
     font-size: 110%;
 }
