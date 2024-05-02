@@ -16,7 +16,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #69A197;
-    color: darkslategray;
+    color: #1f3333;
     padding: 1.5%;
     font-size: 110%;
 }
@@ -28,7 +28,7 @@ header img {
 nav a {
     display: block;
     text-align: center;
-    background-color: darkslategray;
+    background-color: #1f3333;
     padding: 0.8%;
     font-size: 120%;
     color: white;
