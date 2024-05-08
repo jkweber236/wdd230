@@ -26,11 +26,41 @@ header img {
     padding: 2.5%;
 }
 
-nav a {
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #1f3333;
+}
+
+#menu::before {
+    content: "☰";
+    color: #1f3333;
+    font-size: 130%;
+}
+
+#menu.open::before {
+    content: "X";
+    color: #1f3333;
+    font-size: 130%;
+}
+
+.open a {
     display: block;
+}
+
+nav {
+    flex-direction: column;
+}
+
+nav a {
+    display: none;
     text-align: center;
     background-color: #1f3333;
-    padding: 0.8%;
+    padding: 0.7rem;
     font-size: 120%;
     color: white;
     text-decoration: none;
@@ -71,9 +101,17 @@ p {
     margin-bottom: 1.5%;
 }
 
+iframe {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
 footer {
     background-color: #69A197;
     padding: 0.5%;
     font-size: 110%;
-    margin-top: 3%;
+    /* margin-top: 3%; */
 }
