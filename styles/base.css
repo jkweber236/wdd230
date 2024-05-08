@@ -32,22 +32,18 @@ header img {
     right: 1rem;
     background: none;
     border: none;
-    font-size: 1.5rem;
-    color: #1f3333;
 }
-
 
 #menu::before {
     content: "☰";
     color: #1f3333;
-    font-size: 130%;
+    font-size: 200%;
 }
 
 #menu.open::before {
-
     content: "X";
     color: #1f3333;
-    font-size: 130%;
+    font-size: 200%;
 }
 
 .open a {
