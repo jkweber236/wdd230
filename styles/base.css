@@ -36,6 +36,7 @@ header img {
     color: #1f3333;
 }
 
+
 #menu::before {
     content: "☰";
     color: #1f3333;
@@ -43,6 +44,7 @@ header img {
 }
 
 #menu.open::before {
+
     content: "X";
     color: #1f3333;
     font-size: 130%;
@@ -113,5 +115,4 @@ footer {
     background-color: #69A197;
     padding: 0.5%;
     font-size: 110%;
-    /* margin-top: 3%; */
 }
