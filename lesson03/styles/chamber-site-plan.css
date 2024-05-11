@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+:root {
+    --primary-color: #1C3738;
+    --secondary-color: #006C67;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 4em;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.colors {
+    width: 100%;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #b7b7b7;
+    padding: 0.5rem;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+#primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
