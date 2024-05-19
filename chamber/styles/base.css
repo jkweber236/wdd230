@@ -166,8 +166,12 @@ footer img {
     width: 6rem;
     display: flex;
     grid-column: 1/2;
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-top: 2.5rem;
+}
+
+.contact-info {
+    margin-right: 1rem;
 }
 
 .site-name {
