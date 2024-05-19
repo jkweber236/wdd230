@@ -1,13 +1,7 @@
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
     @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Karla&display=swap');
 
-    header {
-        display: flex;
-        align-items: center;
-        background-color: #4f9b9e;
-        font-family: 'Kanit', sans-serif;
-        border: 2px solid black;
-    }
+ 
 
     header img {
         width: 8rem;
@@ -68,5 +62,92 @@
         padding: 1%;
         font-family: 'Karla', sans-serif;
         font-size: 130%;
+    }
+} */
+
+@media screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        border: 2px solid black;
+    }
+
+    header img {
+        width: 8rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        position: static;
+        transform: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 0 1rem;
+        background: none;
+    }
+
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+
+    #hero {
+        height: 100%;
+        width: auto;
+    }
+
+    #action {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+        width: 30%;
+        margin: 2rem;
+    }
+
+    .section2 p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 1rem 2rem;
+        text-align: left;
+    }
+
+    footer img {
+        width: 8rem;
+    }
+
+    .footer-info {
+        text-align: center;
     }
 }

@@ -153,7 +153,8 @@ footer {
     font-family: 'Karla', sans-serif;
     font-size: 1.3rem;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.25fr 2fr;
+    grid-gap: 1rem;
 }
 
 .footer-info {
@@ -166,12 +167,13 @@ footer img {
     width: 6rem;
     display: flex;
     grid-column: 1/2;
-    margin-left: 2rem;
-    margin-top: 2.5rem;
+    margin-top: 2.25rem;
+    margin: auto;
 }
 
 .contact-info {
-    margin-right: 1rem;
+    grid-columN: 2/3;
+    margin: auto;
 }
 
 .site-name {
