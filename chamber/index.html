@@ -9,16 +9,53 @@
     Nampa Chamber of Commerce site, created for WDD - 230. ">
     <meta name="author" content="Jennifer Weber">
 
+    <meta property="og:title" content="Nampa Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://u.realgeeks.media/stewartrealtyllc/nampa-2100x1440.jpg">
+    <meta property="og:url" content="https://jkweber236.github.io/wdd230/chamber/">
+
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-
 </head>
 
 <body>
-
+    <header>
+        <div class="small-header">
+            <img src="images/placeholder.jpg" alt="Nampa Commerce Logo">
+            <h1>Nampa <br> Chamber of <br> Commerce</h1>
+            <button id="menu"></button>
+        </div>
+        <nav>
+            <a rel="home" href="#">Home</a>
+            <a rel="discover" href="">Discover</a>
+            <a rel="directory" href="">Directory</a>
+            <a rel="join" href="">Join</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img id="hero" src="images/chamber-hero5.jpg" alt="Nampa Train Depot Museum">
+            <button id="action">Join the Chamber</button>
+        </div>
+        <div>
+            <h2>Events</h2>
+        </div>
+        <div>
+            <h2>Weather</h2>
+        </div>
+        <p>company spotlights</p>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span></p>
+        <p>Jennifer Weber</p>
+        <p>WDD 230</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src=" scripts/getdates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
 </body>
 
 </html>

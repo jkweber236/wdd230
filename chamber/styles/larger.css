@@ -1,0 +1,72 @@
+@media screen and (min-width: 1024px) {
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Karla&display=swap');
+
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #4f9b9e;
+        font-family: 'Kanit', sans-serif;
+        border: 2px solid black;
+    }
+
+    header img {
+        width: 8rem;
+        margin-left: 3%;
+    }
+
+    header h1 {
+        text-align: center;
+        margin-left: 4%;
+        font-size: 250%;
+    }
+
+    main {
+        font-family: 'Karla', sans-serif;
+    }
+
+    #hero {
+        width: 100%;
+    }
+
+    nav {
+        font-size: 225%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 8%;
+        margin-right: 8%;
+        max-width: 100%;
+    }
+
+    nav a {
+        margin-left: 25%;
+        margin-right: 25%;
+        text-decoration: none;
+        color: black;
+        align-items: center;
+    }
+
+    #hero {
+        position: relative;
+    }
+
+    button {
+        position: absolute;
+        font-weight: bold;
+        top: 40%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        padding: 20px 25px;
+        font-size: 200%;
+        background-color: #cfcfcf99;
+        fill-opacity: 10%;
+        border: 3px solid #000000;
+        border-radius: 10px;
+    }
+
+    footer {
+        background-color: #4f9b9e;
+        padding: 1%;
+        font-family: 'Karla', sans-serif;
+        font-size: 130%;
+    }
+}
