@@ -4,7 +4,6 @@ header {
     background-color: #4f9b9e;
     font-family: 'Kanit', sans-serif;
     border: 2px solid black;
-    background-color: #4f9b9e;
     align-items: center;
     justify-content: space-between;
 }
@@ -18,12 +17,11 @@ header h1 {
     text-align: center;
     font-size: 140%;
     color: #274d4f;
-    margin-top: 0;
-    margin-bottom: auto;
-    align-items: center;
+    margin: 0;
+    padding: 0;
     position: absolute;
+    left: 50%;
     transform: translateX(-50%);
-    margin-left: 50%;
 }
 
 .small-header {
@@ -31,48 +29,24 @@ header h1 {
     align-items: center;
 }
 
-main {
-    font-family: 'Karla', sans-serif;
-}
-
-#hero {
-    width: 100%;
-    /* position: relative; */
-}
-
-#action {
-    position: absolute;
-    font-weight: bold;
-    /* top: 40%; */
-    /* left: 15%; */
-    transform: translateX(-0%);
-    padding: 20px 25px;
-    font-size: 140%;
-    background-color: #cfcfcf99;
-    border: 3px solid #000000;
-    border-radius: 10px;
-}
-
 #menu {
+    background: none;
+    border: none;
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background: none;
-    border: none;
+    font-size: 2.25rem;
+    color: #274d4f;
 }
 
 #menu::before {
     content: "☰";
-    color: #274d4f;
-    font-size: 250%;
     display: flex;
     align-items: center;
 }
 
 #menu.open::before {
-    content: "X";
-    color: #274d4f;
-    font-size: 200%;
+    content: "✖";
 }
 
 .open a {
@@ -80,34 +54,106 @@ main {
 }
 
 nav {
-    font-size: 150%;
     display: flex;
-    justify-content: space-between;
-    max-width: 100%;
+    font-size: 1.5rem;
     flex-direction: column;
-}
-
-nav a {
-    display: none;
-    text-align: center;
-    background-color: #274d4f;
-    font-size: 80%;
-    padding: 2px;
-    color: white;
-    text-decoration: none;
+    align-items: center;
     width: 100%;
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
+    display: none;
+    background-color: #274d4f;
     color: white;
-    align-items: center;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+nav a:hover {
+    background-color: #366666;
+}
+
+main {
+    font-family: 'Karla', sans-serif;
+}
+
+.hero-section {
+    position: relative;
+}
+
+#hero {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+#action {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #cfcfcf99;
+    border: 3px solid #000;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.section1,
+.section3 {
+    margin: 1.5rem;
+    padding: 1rem;
+    padding-top: 0;
+    border: 1px solid gray;
+    background-color: #cfcfcf;
+}
+
+.section1 p {
+    border-bottom: 1px solid gray;
+}
+
+.section2 {
+    width: 80%;
+    margin: 1rem auto 2rem auto;
+
+}
+
+.section2 p {
+    border: 1px solid gray;
+    background-color: #cfcfcf;
+    padding: 1rem;
+}
+
+.section-link {
+    text-align: center;
+    display: block;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+section p {
+    margin-bottom: 0.5rem;
 }
 
 footer {
     background-color: #4f9b9e;
-    padding: 1%;
+    padding: 1rem;
+    text-align: center;
     font-family: 'Karla', sans-serif;
-    font-size: 130%;
+    font-size: 1.3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
 }
