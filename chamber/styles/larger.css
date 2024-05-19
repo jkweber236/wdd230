@@ -3,8 +3,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 2rem;
+        padding: 1rem;
         border: 2px solid black;
+
     }
 
     header img {
@@ -34,10 +35,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 60vh;
-    }
-
-    #hero {
         width: 100%;
     }
 
