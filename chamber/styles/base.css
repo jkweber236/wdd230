@@ -16,7 +16,7 @@ header img {
 header h1 {
     text-align: center;
     font-size: 140%;
-    color: #274d4f;
+    color: #234547;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -36,7 +36,7 @@ header h1 {
     top: 1.5rem;
     right: 1.5rem;
     font-size: 2.25rem;
-    color: #274d4f;
+    color: #234547;
 }
 
 #menu::before {
@@ -63,7 +63,7 @@ nav {
 
 nav a {
     display: none;
-    background-color: #274d4f;
+    background-color: #234547;
     color: white;
     padding: 0.5rem;
     text-align: center;
@@ -77,7 +77,7 @@ nav a:hover {
 
 main {
     font-family: 'Karla', sans-serif;
-    color: #274d4f
+    color: #234547
 }
 
 .hero-section {
