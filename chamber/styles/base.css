@@ -184,3 +184,7 @@ footer img {
 .site-name {
     font-weight: bold;
 }
+
+.footer-break {
+    display: none;
+}
