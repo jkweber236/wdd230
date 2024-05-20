@@ -86,6 +86,7 @@ main {
 
 #hero {
     width: 100%;
+    aspect-ratio: 30 / 13;
     display: block;
     position: relative;
 }
