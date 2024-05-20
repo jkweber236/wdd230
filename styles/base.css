@@ -100,10 +100,13 @@ p {
 }
 
 iframe {
+    height: 300px;
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
     margin-bottom: 4%;
+    border: none;
+
 }
 
 footer {
