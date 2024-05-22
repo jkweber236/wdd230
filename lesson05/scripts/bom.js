@@ -4,7 +4,7 @@ const list = document.querySelector('#list')
 
 
 button.addEventListener('click', () => {
-    if (input.value != '') {
+    if (input.value != '' && list.children.length < 10) {
         const li = document.createElement('li');
         const deletebutton = document.createElement('button');
         li.textContent = input.value;
