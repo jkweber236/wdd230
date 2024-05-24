@@ -3,17 +3,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 1rem 0 1rem 0;
+        padding: 0.25rem 0 0.25rem 0;
         border: 2px solid black;
         width: 100%;
     }
 
     header img {
-        width: 8.5rem;
+        width: 5.5rem;
     }
 
     header h1 {
-        font-size: 2.75rem;
+        font-size: 1.5rem;
         position: static;
         transform: none;
         width: 100%;
@@ -29,9 +29,9 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         width: 70%;
-        margin-left: 1%;
+        margin-left: 2%;
     }
 
     nav a {
@@ -47,11 +47,11 @@
     }
 
     #action {
-        font-size: 2rem;
-        padding: 1.5rem;
+        font-size: 1.25rem;
+        padding: 1rem;
         top: 0;
         left: 0;
-        transform: translate(50%, 150%);
+        transform: translate(80%, 200%);
     }
 
     main {
@@ -66,6 +66,13 @@
 
     #hero {
         margin-bottom: 2rem;
+        height: 80vh;
+        object-fit: cover;
+        object-position: 0 80%;
+    }
+
+    section h2 {
+        font-size: 2rem;
     }
 
     .section1,
@@ -73,26 +80,28 @@
     .section3 {
         width: 80%;
         margin: 2rem;
-        font-size: 2rem;
+        font-size: 1.25rem;
         margin: auto;
     }
 
     .site-content {
         display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        margin-bottom: 2rem;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 5rem 0 5rem;
     }
 
     .section1 {
         grid-column: 1/2;
-        margin-top: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        width: 75%;
         grid-row: 1/3;
-        margin-right: 0;
+        /* margin-right: 0; */
     }
 
     .section1 p {
         border-bottom: none;
-        margin: 1rem;
+        margin: 1rem 0.5rem;
     }
 
     .events {
@@ -104,7 +113,7 @@
 
     .events img {
         display: grid;
-        width: 8rem
+        width: 6.5rem
     }
 
     p.event1 {
@@ -138,19 +147,17 @@
     }
 
     .section2 {
-        margin-top: 2rem;
+        margin-top: 1rem;
         grid-column: 2/3;
         grid-row: 1/2;
+        width: 80%;
     }
 
     .section3 {
         grid-column: 2/3;
         grid-row: 2/3;
         width: 75%;
-    }
-
-    section h2 {
-        font-size: 2.5rem;
+        margin-top: -0.25rem;
     }
 
     section p {
@@ -186,17 +193,10 @@
         width: 75%;
     }
 
-    .business3 {
-        grid-column: 1/3;
-        width: 37.5%;
-        margin: auto;
-        margin-top: 2rem;
-    }
-
     footer {
         display: grid;
         grid-template-columns: 1fr 6fr;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
     .footer-break {
@@ -207,12 +207,16 @@
     .footer-info {
         display: flex;
         align-items: center;
-        margin: auto;
         grid-column: 2/3;
-        width: 95%;
-        font-size: 1.75rem;
+        width: 90%;
+        font-size: 1.25rem;
         justify-content: center;
+        margin-left: 3rem;
 
+    }
+
+    .footer-info p {
+        margin: 1rem 0.5rem 1.25rem;
     }
 
     .contact-info {
@@ -222,15 +226,19 @@
         grid-column: 2/3;
         justify-content: center;
         width: 95%;
-        font-size: 1.75rem;
+        font-size: 1.25rem;
+    }
+
+    .contact-info p {
+        margin: 1rem;
     }
 
     footer img {
         display: flex;
-        width: 12rem;
+        width: 9rem;
         margin: auto;
         grid-column: 1/2;
         grid-row: 1/3;
-        margin-left: 15%;
+        margin-left: 3rem;
     }
 }
