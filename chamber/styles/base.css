@@ -253,3 +253,9 @@ footer img {
 .footer-break {
     display: none;
 }
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+    border-color: #eee;
+}
