@@ -1,7 +1,6 @@
-const modeButton = document.querySelector(".switch");
-const body = document.querySelector("body");
+const modeButton = document.querySelector(".switch input");
 const main = document.querySelector("main");
 
-modeButton.addEventListener("click", () => {
+modeButton.addEventListener("change", () => {
     main.classList.toggle('dark-mode');
 });

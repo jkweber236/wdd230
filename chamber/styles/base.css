@@ -256,6 +256,10 @@ footer img {
 
 .dark-mode {
     background-color: #000;
-    color: #fff;
+    color: black;
     border-color: #eee;
+}
+
+.dark-mode .section2 h2 {
+    color: white;
 }
