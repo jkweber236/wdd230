@@ -64,6 +64,32 @@ nav a {
     text-decoration: none;
 }
 
+.hero {
+    margin-top: 10px;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: linear-gradient(#fff, #718CAA);
+    border: 1px solid black;
+    padding: 1rem;
+    opacity: 0.8;
+}
+
+.herolabel p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
 h2 {
     text-align: center;
     border-bottom: 1px solid black;

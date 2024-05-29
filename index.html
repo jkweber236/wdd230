@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <img src="images/my-photo.jpg" alt="Profile picture">
+        <img src="images/my-photo.webp" alt="Profile picture">
         <h1>Jennifer Weber</h1>
     </header>
     <button id="menu" aria-label="Menu"></button>
@@ -35,6 +35,16 @@
             href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/14?lang=eng&id=p7#p7">Scripture</a>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-large.webp" media="(max-width: 960px)">
+                <img src="images/hero-large.webp" alt="Meridian Temple">
+            </picture>
+            <div class="herolabel">
+                <p>Meridian Idaho Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card" id="section1">
             <h3>Learning Activities</h3>
