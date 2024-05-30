@@ -79,18 +79,18 @@ nav a {
 
 .herolabel {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 15px;
+    left: 15px;
     background: linear-gradient(#fff, #718CAA);
     border: 1px solid black;
-    padding: 1rem;
+    padding: 0.5rem;
     opacity: 0.8;
 }
 
 .herolabel p {
     margin: 0;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.65rem;
 }
 
 h2 {
