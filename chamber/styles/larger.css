@@ -10,25 +10,22 @@
 
     header img {
         width: 5.5rem;
+        margin-left: 1rem;
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
         position: static;
         transform: none;
-    }
-
-    .small-header h1 {
+        margin-left: 1rem;
         width: 50%;
-        margin-left: 4rem;
-        justify-content: left;
     }
 
     nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         width: 90%;
         margin-right: 9rem;
     }
@@ -64,11 +61,11 @@
     }
 
     #action {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         padding: 1rem;
         top: 0;
         left: 0;
-        transform: translate(80%, 200%);
+        transform: translate(80%, 210%);
     }
 
     main {
@@ -86,7 +83,7 @@
         margin-bottom: 2rem;
         height: 80vh;
         object-fit: cover;
-        object-position: 0 80%;
+        object-position: 0 60%;
     }
 
     section h2 {
