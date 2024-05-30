@@ -2,8 +2,6 @@
 
 header {
     background-color: #38527E;
-    /* #451417*/
-    /*#495176*/
     font-family: 'Kanit', sans-serif;
     border: 1px solid black;
     align-items: center;
@@ -20,7 +18,6 @@ header h1 {
     width: 10rem;
     text-align: center;
     font-size: 140%;
-    /* color: #F8A18B; */
     color: #D1EAF9;
     margin: 0;
     padding: 0;
@@ -41,7 +38,7 @@ header h1 {
     top: 1rem;
     right: 5%;
     font-size: 2.5rem;
-    color: #38527E;
+    color: #D1EAF9;
 }
 
 #menu::before {
@@ -295,4 +292,8 @@ main.dark-mode {
 
 .dark-mode .section2 h2 {
     color: #D1EAF9;
+}
+
+.dark-mode #menu {
+    color: #38527E;
 }
