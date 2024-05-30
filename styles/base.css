@@ -65,8 +65,11 @@ nav a {
 }
 
 .hero {
-    margin-top: 10px;
+    margin-top: 2rem;
     position: relative;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/3;
 }
 
 .hero img {
@@ -87,7 +90,7 @@ nav a {
 .herolabel p {
     margin: 0;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 h2 {
