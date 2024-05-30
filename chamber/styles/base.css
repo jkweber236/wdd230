@@ -41,7 +41,7 @@ header h1 {
     top: 1rem;
     right: 5%;
     font-size: 2.5rem;
-    color: #22314c;
+    color: #38527E;
 }
 
 #menu::before {
@@ -97,7 +97,7 @@ nav a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #cfcfcf;
+    background-color: #D1EAF9;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -109,17 +109,21 @@ nav a {
     width: 16px;
     left: 3px;
     bottom: 3px;
-    background-color: white;
+    background-color: #38527E;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked+.slider {
-    background-color: #22314c;
+    background-color: #38527E;
+}
+
+input:checked+.slider:before {
+    background-color: #D1EAF9;
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #22314c;
+    box-shadow: 0 0 1px #38527E;
 }
 
 input:checked+.slider:before {
