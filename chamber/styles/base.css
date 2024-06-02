@@ -229,6 +229,14 @@ section.section3 {
     margin-bottom: 0.5rem;
 }
 
+.section3 div {
+    text-align: center;
+}
+
+.section3 input {
+    margin-bottom: 0.5rem;
+}
+
 .section1 p {
     border-bottom: 1px solid gray;
 }

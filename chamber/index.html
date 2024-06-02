@@ -80,7 +80,14 @@
             </section>
             <section class="section3">
                 <h2>Weather</h2>
-                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae</p>
+                <div>
+                    <input id="temperature" type="number" placeholder="Temperature"><br>
+                    <input id="windspeed" type="number" placeholder="Wind Speed"><br>
+                    <button onclick="getWindChill()">Submit</button>
+                </div>
+                <div>
+                    <p class="windchill">Wind Chill: </p>
+                </div>
             </section>
         </div>
     </main>
@@ -91,7 +98,7 @@
             <p>
                 Contact Info:<br>
                 info@nampacc.org<br>
-                (208) 495-2722
+                (208)495-2722
             </p>
         </div>
         <div class="footer-info">
@@ -107,6 +114,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
