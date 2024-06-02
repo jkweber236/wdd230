@@ -9,7 +9,7 @@
     }
 
     header img {
-        width: 5.5rem;
+        width: 6rem;
         margin-left: 1rem;
     }
 
@@ -77,6 +77,28 @@
 
     #menu {
         display: none;
+    }
+
+    .hero-section {
+        margin-bottom: 2rem;
+    }
+
+    picture img {
+        height: 82vh;
+    }
+
+    .herolabel p::before {
+        content: "Large";
+    }
+
+    .herolabel {
+        bottom: 5rem;
+        left: 5rem;
+    }
+
+    .herolabel p {
+        font-size: 2rem;
+        padding: 0.5rem 1rem
     }
 
     #hero {

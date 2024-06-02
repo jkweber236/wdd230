@@ -7,6 +7,10 @@
         align-items: center;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
     .small-header {
         width: 100%;
     }
@@ -58,6 +62,23 @@
         -webkit-transform: translateX(15px);
         -ms-transform: translateX(15px);
         transform: translateX(15px);
+    }
+
+    .herolabel p::before {
+        content: "Medium";
+    }
+
+    picture img {
+        height: 55vh;
+    }
+
+    .herolabel {
+        bottom: 3rem;
+        left: 3rem;
+    }
+
+    .herolabel p {
+        font-size: 1.5rem;
     }
 
     .hero-section {

@@ -24,7 +24,7 @@
 <body>
     <header>
         <div class="small-header">
-            <img src="images/placeholder.webp" alt="Nampa Commerce Logo">
+            <img src="images/logo.webp" alt="Nampa Commerce Logo">
             <h1>Nampa Chamber of Commerce</h1>
             <button id="menu" aria-label="Menu"></button>
             <label class="switch" aria-label="toggle">
@@ -41,8 +41,17 @@
     </header>
     <main>
         <div class="hero-section">
-            <img id="hero" src="images/chamber-hero.webp" alt="Nampa Train Depot Museum">
-            <button id="action">Join the Chamber</button>
+            <!-- <img id="hero" src="images/chamber-hero.webp" alt="Nampa Train Depot Museum"> -->
+            <picture>
+                <source srcset="images/small.webp" media="(max-width: 649px)">
+                <source srcset="images/medium.webp" media="(max-width: 1079px)">
+                <source srcset="images/large.webp" media="(min-width: 1080px)">
+                <img src="images/large.webp" alt="Temporary Image">
+            </picture>
+            <div class="herolabel">
+                <p></p>
+            </div>
+            <!-- <button id="action">Join the Chamber</button> -->
         </div>
         <div class="site-content">
             <section class="section1">
@@ -76,7 +85,7 @@
         </div>
     </main>
     <footer>
-        <img src="images/placeholder.webp" alt="Nampa Commerce Logo">
+        <img src="images/logo.webp" alt="Nampa Commerce Logo">
         <div class="contact-info">
             <p class="site-name">Nampa Chamber of Commerce</p>
             <p>
