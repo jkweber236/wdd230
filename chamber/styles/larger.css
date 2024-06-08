@@ -83,24 +83,6 @@
         margin-bottom: 2rem;
     }
 
-    picture img {
-        height: 82vh;
-    }
-
-    .herolabel p::before {
-        content: "Large";
-    }
-
-    .herolabel {
-        bottom: 5rem;
-        left: 5rem;
-    }
-
-    .herolabel p {
-        font-size: 2rem;
-        padding: 0.5rem 1rem
-    }
-
     #hero {
         margin-bottom: 2rem;
         height: 80vh;

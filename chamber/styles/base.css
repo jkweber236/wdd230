@@ -147,36 +147,6 @@ main {
     padding-bottom: 1.5rem;
 }
 
-picture {
-    width: 100%;
-}
-
-picture img {
-    height: 30vh;
-    object-fit: cover;
-    width: 100%;
-}
-
-.herolabel p::before {
-    content: "Small";
-}
-
-.herolabel {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 1.5rem;
-    background: white;
-    border: 1px solid black;
-    padding: 0.5rem;
-    opacity: 0.8;
-}
-
-.herolabel p {
-    margin: 0;
-    font-weight: 600;
-    font-size: 1rem;
-}
-
 .hero-section {
     position: relative;
 }

@@ -64,23 +64,6 @@
         transform: translateX(15px);
     }
 
-    .herolabel p::before {
-        content: "Medium";
-    }
-
-    picture img {
-        height: 55vh;
-    }
-
-    .herolabel {
-        bottom: 3rem;
-        left: 3rem;
-    }
-
-    .herolabel p {
-        font-size: 1.5rem;
-    }
-
     .hero-section {
         display: flex;
         justify-content: center;
