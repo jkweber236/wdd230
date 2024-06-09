@@ -109,23 +109,26 @@
     #discover {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        row-gap: 2rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        align-items: start;
     }
 
     #lastVisit {
         grid-column: 1/2;
-        grid-row: 1/2;
         text-align: center;
     }
 
     .demographics {
         grid-column: 1/2;
-        grid-row: 1/3;
         text-align: center;
-        margin-left: 4rem;
+        margin-left: 10%;
         margin-right: auto;
+    }
+
+    .demographics p {
+        padding: 0.25rem;
+        ;
     }
 
     .local-photos {
@@ -148,5 +151,15 @@
 
     .city-council {
         grid-column: 1/2;
+    }
+
+    .city-council p {
+        padding: 0;
+    }
+
+    .left-content {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: auto;
     }
 }
