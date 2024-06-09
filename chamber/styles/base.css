@@ -362,3 +362,12 @@ main.dark-mode {
 #lastVisit {
     text-align: center;
 }
+
+.dark-mode .right-content,
+.dark-mode .left-content {
+    color: #D1EAF9;
+}
+
+.dark-mode .demographics {
+    color: #22314c
+}
