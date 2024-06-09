@@ -306,3 +306,51 @@ main.dark-mode {
 .dark-mode #menu {
     color: #38527E;
 }
+
+.dark-mode .demographics {
+    color: #D1EAF9;
+}
+
+#discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.local-photos {
+    width: 85%;
+    height: auto;
+    margin-top: 1.5rem;
+}
+
+.local-photos img {
+    width: 100%;
+    height: auto;
+}
+
+.local-photos p {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.demographics {
+    background-color: #cfcfcf;
+    width: 70%;
+    padding: 4%;
+    text-align: center;
+}
+
+.demographics h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0;
+}
+
+.demographics p {
+    margin: 0.5rem 0 0;
+    font-size: 0.8rem
+}
+
+.city-council {
+    text-align: center;
+}

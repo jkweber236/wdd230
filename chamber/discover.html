@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nampa Chamber of Commerce Home Page</title>
-    <meta name="description" content="This is the home page for the 
+    <meta name="description" content="This is the discover page for the 
     Nampa Chamber of Commerce site, created for WDD - 230. ">
     <meta name="author" content="Jennifer Weber">
 
-    <meta property="og:title" content="Nampa Chamber of Commerce Home Page">
+    <meta property="og:title" content="Nampa Chamber of Commerce Discover Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://u.realgeeks.media/stewartrealtyllc/nampa-2100x1440.jpg">
     <meta property="og:url" content="https://jkweber236.github.io/wdd230/chamber/">
@@ -33,62 +33,46 @@
             </label>
         </div>
         <nav>
-            <a rel="home" href="#">Home</a>
+            <a rel="home" href="index.html">Home</a>
             <a rel="discover" href="#">Discover</a>
             <a rel="directory" href="#">Directory</a>
             <a rel="join" href="#">Join</a>
         </nav>
     </header>
-    <main>
-        <div class="hero-section">
-            <!-- <img id="hero" src="images/chamber-hero.webp" alt="Nampa Train Depot Museum"> -->
-            <picture>
-                <source srcset="images/small.webp" media="(max-width: 649px)">
-                <source srcset="images/medium.webp" media="(max-width: 1079px)">
-                <source srcset="images/large.webp" media="(min-width: 1080px)">
-                <img src="images/large.webp" alt="Temporary Image">
-            </picture>
-            <div class="herolabel">
-                <p></p>
-            </div>
-            <!-- <button id="action">Join the Chamber</button> -->
+    <main id="discover">
+        <p id="lastVisit"></p>
+        <div class="demographics">
+            <h2>Demographics (as of 2023)</h2>
+            <p>Total Population: 109,926</p>
+            <p>Male: 49.3%</p>
+            <p>Female: 50.7%</p>
+            <p>Average Household Size: 2.81</p>
         </div>
-        <div class="site-content">
-            <section class="section1">
-                <h2>Events</h2>
-                <div class="events">
-                    <p class="event1">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at
-                        vix</p>
-                    <img class="event1" src="images/placeholder.webp" alt="Event 1 image">
-                    <p class="event2">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at
-                        vix</p>
-                    <img class="event2" src="images/placeholder.webp" alt="Event 2 image">
-                    <p class="event3">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at
-                        vix</p>
-                    <img class="event3" src="images/placeholder.webp" alt="Event 3 image">
-                </div>
-                <a href="#" class="section-link">View all events</a>
-            </section>
-            <section class="section2">
-                <h2>Business Spotlights</h2>
-                <div class="businesses">
-                    <p class="business1">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
-                        at vix</p>
-                    <p class="business2"> Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae
-                        legendos at vix</p>
-                </div>
-            </section>
-            <section class="section3">
-                <h2>Weather</h2>
-                <div>
-                    <input id="temperature" type="number" placeholder="Temperature"><br>
-                    <input id="windspeed" type="number" placeholder="Wind Speed"><br>
-                    <button onclick="getWindChill()">Submit</button>
-                </div>
-                <div>
-                    <p class="windchill">Wind Chill: </p>
-                </div>
-            </section>
+        <div class="city-council">
+            <h2>City Council</h2>
+            <h3>Mayor</h3>
+            <p>Debbie Kling</p>
+            <h3>Council Members</h3>
+            <p>Victor Rodriquez</p>
+            <p>Natalie Jangula</p>
+            <p>David Bills</p>
+            <p>Dale Reynolds</p>
+            <p>Randy Haverfield</p>
+            <p>Sebastian Griffin</p>
+        </div>
+        <div class="local-photos">
+            <img src="images/nampa-sign.webp" loading="lazy">
+            <p>Nampa Welcome sign</p>
+            <img src="images/nampa-depot.webp" loading="lazy">
+            <p>Nampa Train Depot</p>
+            <img src="images/nampa-arcade.webp" loading="lazy">
+            <p>Jeremy's Downtown Arcade</p>
+            <img src="images/reel-theather.webp" loading="lazy">
+            <p>Reel Theather</p>
+            <img src="images/roaring-springs.webp" loading="lazy">
+            <p>Roaring Springs</p>
+            <img src="images/wahooz.webp" loading="lazy">
+            <p>Wahooz</p>
         </div>
     </main>
     <footer>
@@ -115,6 +99,7 @@
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/last-visit.js"></script>
 </body>
 
 </html>
