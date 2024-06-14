@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="This web page is designed to practice making forms.">
+    <meta name="author" content="Jennifer Weber">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/my-photo.webp" alt="Profile picture">
+        <h1>Jennifer Weber</h1>
+    </header>
+    <button id="menu" aria-label="Menu"></button>
+    <nav>
+        <a rel="home" href="index.html">Home</a>
+        <a rel="site-plan" href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a rel="chamber" href="chamber/">Chamber</a>
+        <a rel="external" href="https://www.byui.edu/">BYU-Idaho</a>
+        <a rel="external"
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/14?lang=eng&id=p7#p7">Scripture</a>
+    </nav>
+    <main class="form">
+        <form method="get" action="record.html">
+            <div id="formmessage"></div>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required><br>
+            <label for="confirmPass">Confirm Password:</label><br>
+            <input type="password" id="confirmPass" name="confirmPass" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu"
+                title="A valid byui.edu email address." required><br>
+            <label for="rating">Page Rating: <span id="displayValue"></span></label><br>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" list="rangevalue">
+            <datalist id="rangevalue">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist><br>
+            <button type="submit" id="createbutton">Create Account</button>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span><br>
+            Jennifer Weber<br>
+            Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

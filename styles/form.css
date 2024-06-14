@@ -1,0 +1,47 @@
+*:root {
+    --display: flex;
+    --color: #1f3333;
+    --font-size: 1.25rem;
+    --align: center;
+}
+
+
+form label,
+#formmessage {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+form input {
+    display: var(--display);
+}
+
+label,
+input {
+    color: var(--color);
+}
+
+#createbutton {
+    display: block;
+    padding: 0.25rem;
+    margin: 1rem auto 2rem;
+    color: var(--color);
+}
+
+.form {
+    font-size: var(--font-size);
+    display: var(--display);
+    justify-content: var(--align);
+    align-items: var(--align);
+}
+
+main.record {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    width: 80%;
+    text-align: var(--align);
+}
+
+main.record h2 {
+    border-bottom: none;
+}
