@@ -369,5 +369,84 @@ main.dark-mode {
 }
 
 .dark-mode .demographics {
+    color: #22314c;
+}
+
+#join-form {
+    padding: 1.5rem;
+    width: 80%;
+    margin: auto;
+}
+
+.join h2 {
+    margin: 0;
+}
+
+#contact-info,
+#business-info {
+    background: #cfcfcf;
+    padding: 1.5rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 2rem;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+table {
+    border: thin solid #22314c;
+    border-collapse: collapse;
+    width: 100%;
+    color: #22314c;
+    text-align: center;
+}
+
+td {
+    color: #22314c;
+    font-weight: bold;
+    font-size: 1rem;
+    border: thin solid #22314c;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+legend {
+    font-weight: bold;
     color: #22314c
+}
+
+#join-form button {
+    display: block;
+    width: 40%;
+    height: 2rem;
+    margin: 0 auto;
+    color: #D1EAF9;
+    font-weight: bold;
+    background-color: #22314c;
+}
+
+.dark-mode legend {
+    background-color: #D1EAF9;
+    padding: 0.4rem;
+    box-shadow: 5px 5px 5px #22314c;
+}
+
+.dark-mode #join-form button {
+    background-color: #D1EAF9;
+    color: #22314c;
+}
+
+.dark-mode table,
+.dark-mode td {
+    color: #D1EAF9;
+    border-color: #D1EAF9;
 }

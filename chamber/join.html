@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nampa Chamber of Commerce Home Page</title>
+    <meta name="description" content="This is the join page for the 
+    Nampa Chamber of Commerce site, created for WDD - 230. It is meant to allow prospective 
+    members to apply to join the Nampa Chamber of Commerce through a membership application 
+    form.">
+    <meta name="author" content="Jennifer Weber">
+
+    <meta property="og:title" content="Nampa Chamber of Commerce Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://u.realgeeks.media/stewartrealtyllc/nampa-2100x1440.jpg">
+    <meta property="og:url" content="https://jkweber236.github.io/wdd230/chamber/">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="small-header">
+            <img src="images/logo.webp" alt="Nampa Commerce Logo">
+            <h1>Nampa Chamber of Commerce</h1>
+            <button id="menu" aria-label="Menu"></button>
+            <label class="switch" aria-label="toggle">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <nav>
+            <a rel="home" href="index.html">Home</a>
+            <a rel="discover" href="discover.html">Discover</a>
+            <a rel="directory" href="#">Directory</a>
+            <a rel="join" href="#">Join</a>
+        </nav>
+    </header>
+    <main class="join">
+        <form id="join-form" method="get" action="thankyou.html">
+            <div id="error-message"></div>
+            <fieldset id="contact-info">
+                <legend>Applicant Information</legend>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="email123@gmail.com" required><br>
+                <label for="phone">Mobile Phone Number:</label><br>
+                <input type="telephone" id="phone" name="phone" required><br>
+            </fieldset>
+            <fieldset id="business-info">
+                <legend>Business Information</legend>
+                <label for="business">Business/Organization Name:</label><br>
+                <input type="text" id="business" name="business" required><br>
+                <label for="position-title">Title/Position:</label><br>
+                <input type="text" id="position-title" name="position-title" required><br>
+                <label for="business-desc">Business/Organization Description</label><br>
+                <label><textarea id="business-desc" name="business-desc"></textarea></label><br>
+                <label for="benefit-level">Membership Level</label><br>
+                <select id="benefit-level" name="benefit-level">
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value="np">NP</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select><br>
+            </fieldset>
+            <input type="hidden" id="time-stamp" name="time-stamp">
+            <button type="submit">Apply Now</button>
+        </form>
+        <Table id="membership-benefits">
+            <caption>Table 1: Membership Benefits Comparison</caption>
+
+            <thead>
+                <tr>
+                    <th id="tabletitle" colspan="5" scope="colgroup">Membership Benefits</th>
+                </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Non-Profit</th>
+                    <th scope="col">Bronze</th>
+                    <th scope="col">Silver</th>
+                    <th scope="col">Gold</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Pricing</td>
+                    <td>Free (Non-profit only)</td>
+                    <td>$200</td>
+                    <td>$500</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Access to a Business Network</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Listing in Member Directory</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Local Event Discounts</td>
+                    <td>X</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Access to Community Workshops</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Basic Ads</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Priority Ads</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>Business Consultations</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>✓</td>
+                </tr>
+
+            </tbody>
+        </Table>
+
+    </main>
+    <footer>
+        <img src="images/logo.webp" alt="Nampa Commerce Logo">
+        <div class="contact-info">
+            <p class="site-name">Nampa Chamber of Commerce</p>
+            <p>
+                Contact Info:<br>
+                info@nampacc.org<br>
+                (208)495-2722
+            </p>
+        </div>
+        <div class="footer-info">
+            <p>©<span id="currentYear"></span> Nampa Chamber</p>
+            <p class="footer-break"> | </p>
+            <p>Jennifer Weber</p>
+            <p class="footer-break"> | </p>
+            <p>WDD 230 Project</p>
+            <p class="footer-break"> | </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/time-stamp.js"></script>
+    <script src="scripts/regex.js"></script>
+</body>
+
+</html>

@@ -161,4 +161,17 @@
         margin-left: 5%;
         margin-right: auto;
     }
+
+    .join {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    form {
+        grid-column: 1/2;
+    }
+
+    form input {
+        margin: 1rem;
+    }
 }
