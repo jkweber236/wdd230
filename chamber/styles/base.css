@@ -531,3 +531,7 @@ legend {
 .dark-mode #table-title {
     background-color: black;
 }
+
+.dark-mode caption {
+    color: var(--accent-color);
+}
