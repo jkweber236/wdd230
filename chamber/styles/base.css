@@ -482,46 +482,21 @@ legend {
 
 .dark-mode th,
 .dark-mode td {
-    color: var(--accent-color);
-    border: thin solid white;
+    border: 2px solid white;
 }
 
 .dark-mode thead th {
     background-color: var(--secondary-color);
     color: var(--accent-color);
     padding: 0.25rem;
-    border: 2px solid white;
-}
-
-.dark-mode tbody tr:nth-child(even) {
-    background-color: var(--background-color);
-    color: var(--secondary-color);
-}
-
-.dark-mode td {
-    color: var(--secondary-color);
 }
 
 .dark-mode tbody tr:nth-child(odd) {
     background-color: var(--accent-color);
-    color: var(--secondary-color);
-}
-
-.dark-mode tbody tr:nth-child(odd) td {
-    color: var(--secondary-color);
 }
 
 .dark-mode tbody tr:nth-child(even) {
     background-color: var(--background-color);
-    color: var(--secondary-color);
-}
-
-.dark-mode td {
-    color: var(--secondary-color);
-}
-
-.dark-mode tbody tr:nth-child(even) td {
-    color: var(--secondary-color);
 }
 
 .dark-mode table {
