@@ -355,4 +355,16 @@
         width: 80%;
     }
 
+    table {
+        height: 93.5%;
+    }
+
+    .join {
+        padding: 4rem;
+    }
+
+    #join-form {
+        padding: 0;
+        margin: 0;
+    }
 }
