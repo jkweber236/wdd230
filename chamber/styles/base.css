@@ -462,7 +462,6 @@ legend {
 #join-form button {
     display: block;
     width: 40%;
-    height: 2rem;
     margin: 0 auto;
     color: var(--accent-color);
     font-weight: bold;

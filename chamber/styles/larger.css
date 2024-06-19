@@ -338,6 +338,7 @@
     form {
         grid-column: 1/2;
         margin: 1rem;
+        width: 100%;
     }
 
     form input {
@@ -352,7 +353,6 @@
     #contact-info {
         padding: 1.5rem;
         background: #cfcfcf;
-        width: 80%;
     }
 
     table {
@@ -361,5 +361,22 @@
 
     .join {
         padding: 4rem;
+    }
+
+    #membership-benefits th,
+    #membership-benefits tr {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    select#benefit-level {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
+    form button {
+        padding: 0.5rem;
     }
 }
