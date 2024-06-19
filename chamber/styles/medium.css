@@ -174,4 +174,28 @@
     form input {
         margin: 1rem;
     }
+
+    .join {
+        padding: 4rem;
+    }
+
+    #join-form {
+        padding: 0;
+        margin: 0;
+        width: 80%;
+    }
+
+    #membership-benefits th {
+        padding: 0.5rem;
+    }
+
+    #membership-benefits td {
+        padding: 0;
+        margin: 0;
+    }
+
+    #membership-benefits {
+        height: 92.5%;
+        margin: 2re
+    }
 }

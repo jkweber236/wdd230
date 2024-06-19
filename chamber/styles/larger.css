@@ -345,8 +345,8 @@
     }
 
     #join-form {
-        padding: 1.5rem;
-        margin: 2rem auto;
+        padding: 0;
+        margin: 0;
     }
 
     #contact-info {
@@ -361,10 +361,5 @@
 
     .join {
         padding: 4rem;
-    }
-
-    #join-form {
-        padding: 0;
-        margin: 0;
     }
 }

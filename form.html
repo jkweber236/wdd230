@@ -36,7 +36,8 @@
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username" required><br>
             <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required><br>
+            <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                required><br>
             <label for="confirmPass">Confirm Password:</label><br>
             <input type="password" id="confirmPass" name="confirmPass" required><br>
             <label for="email">Email:</label><br>
