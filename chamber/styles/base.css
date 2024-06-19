@@ -509,3 +509,8 @@ legend {
 .dark-mode caption {
     color: var(--accent-color);
 }
+
+.dark-mode nav.open a {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}

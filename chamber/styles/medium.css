@@ -235,4 +235,9 @@
     legend {
         margin-bottom: 1rem;
     }
+
+    .dark-mode nav a {
+        background-color: var(--accent-color);
+        color: var(--secondary-color);
+    }
 }
