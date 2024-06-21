@@ -123,6 +123,10 @@ p {
     padding-right: 3%;
 }
 
+.card ol li {
+    padding: 0.25rem;
+}
+
 .card ul li {
     margin-top: 1.5%;
     margin-bottom: 1.5%;
