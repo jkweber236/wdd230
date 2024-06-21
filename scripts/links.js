@@ -1,11 +1,11 @@
 const baseURL = "https://jkweber236.github.io/wdd230/";
-const linksURL = "https//jkweber.github.io/wdd230/data/links.json"
-const activityLinks = document.querySelector('#activity-links');
+const linksURL = "https://jkweber236.github.io/wdd230/data/links.json";
+const activityLinks = document.querySelector("#activity-links")
 
-async function getLinks() {
+async function GetLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data);
+    displayLinks(data.lessons)
 }
 
 function displayLinks(weeks) {
@@ -33,15 +33,6 @@ function displayLinks(weeks) {
         count = 0
         activityLinks.appendChild(listItem)
     })
-};
+}
 
-getLinks();
-// const lessonTitle = document.createElement('h2');
-// lessonTitle.textContent = `Lesson ${week.week}`;
-// lessonDiv.appendChild(lessonTitle);
-
-// lesson.links.forEach(link => {
-//     const linkElement = document.createElement('a');
-//     linkElement.href = `${baseURL}${link.url}`;
-//     linkElement.textContent = link.title;
-//     lessonDiv.appendChild(linkElement);
+GetLinks()
