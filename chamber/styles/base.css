@@ -514,3 +514,8 @@ legend {
     background-color: var(--accent-color);
     color: var(--secondary-color);
 }
+
+.directory #cards img {
+    height: 10rem;
+    width: auto;
+}
