@@ -4,57 +4,57 @@
             "name": "The Reel Theater",
             "address": "2104 Caldwell Blvd, Nampa, ID",
             "phone": "208-377-2620",
-            "websiteURL": "https://www.reeltheatre.com/showtimes-nampa",
+            "website": "https://www.reeltheatre.com/showtimes-nampa",
             "image": "images/real-theather.webp",
-            "membershipLevel": "Bronze"
+            "membership": "Bronze"
         },
         {
             "name": "Jeremy's Downtown Arcade",
             "address": "206 12th Ave S, Nampa, ID",
             "phone": "208-794-2076",
-            "websiteURL": "https://www.facebook.com/jeremysdowntown/",
+            "website": "https://www.facebook.com/jeremysdowntown/",
             "image": "images/jeremys-arcade.webp",
-            "membershipLevel": "Bronze"
+            "membership": "Bronze"
         },
         {
             "name": "Nampa Rollerdrome",
             "address": "19 10th Ave S, Nampa, ID",
             "phone": "208-466-9905",
-            "websiteURL": "https://namparollerdrome.com/",
+            "website": "https://namparollerdrome.com/",
             "image": "images/rollerdrome.webp",
-            "membershipLevel": "Silver"
+            "membership": "Silver"
         },
         {
             "name": "The Egg Factory",
             "address": "820 Caldwell Blvd, Nampa, ID",
             "phone": "208-466-2728",
-            "websiteURL": "http://www.eggfactorycafe.com/",
+            "website": "http://www.eggfactorycafe.com/",
             "image": "images/egg-factory.webp",
-            "membershipLevel": "Silver"
+            "membership": "Silver"
         },
         {
             "name": "Nampa Farmers Market",
             "address": "1 14th Ave S, Nampa, ID",
             "phone": "208-412-3814",
-            "websiteURL": "https://nampafarmersmarket.com/",
+            "website": "https://nampafarmersmarket.com/",
             "image": "images/nampa-fm.webp",
-            "membershipLevel": "Silver"
+            "membership": "Silver"
         },
         {
             "name": "Real Deals",
             "address": "616 12th Avenue Rd, Nampa, ID",
             "phone": "208-271-7300",
-            "websiteURL": "https://nampa.realdeals.net/",
+            "website": "https://nampa.realdeals.net/",
             "image": "images/real-deals.webp",
-            "membershipLevel": "Gold"
+            "membership": "Gold"
         },
         {
             "name": "The Big Box Outlet Store",
             "address": "1813 Caldwell Blvd, Nampa, ID",
             "phone": "208-442-4396",
-            "websiteURL": "https://bigboxnampa.com/",
+            "website": "https://bigboxnampa.com/",
             "image": "images/big-box-store.webp",
-            "membershipLevel": "Gold"
+            "membership": "Gold"
         }
     ]
 }
