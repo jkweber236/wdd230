@@ -515,17 +515,34 @@ legend {
     color: var(--secondary-color);
 }
 
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .directory #cards img {
-    height: 10rem;
-    width: auto;
+    margin-bottom: 0;
 }
 
 section.card {
     background-color: var(--background-color);
     margin: 2rem;
-    max-width: 400px;
+    width: 25rem;
+    padding-bottom: 1rem;
+}
+
+.card p,
+section.card a {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 0.25rem;
 }
 
 img.logo {
-    padding: 2rem;
+    padding: 2rem 1rem 0.25rem;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    min-width: 300px;
 }
