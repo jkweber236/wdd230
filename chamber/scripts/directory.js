@@ -1,32 +1,10 @@
-// const baseURL = "https://jkweber236.github.io/wdd230/";
-// const membersURL = "https://jkweber236.github.io/wdd230/chamber/data/members.json";
-// const cards = document.querySelector("#cards");
-// const list = document.querySelector("#list");
-
-// const gridbutton = document.querySelector("#grid-view");
-// const listbutton = document.querySelector("#list-view");
-// const cardsdisplay = document.querySelector("#cards");
-// const listdisplay = document.querySelector("#list");
-
-// gridbutton.addEventListener("click", () => {
-
-//     cardsdisplay.classList.add("cards");
-//     listdisplay.classList.remove("list");
-// });
-
-// listbutton.addEventListener("click", showList);
-
-// function showList() {
-//     listdisplay.classList.add("list");
-//     cardsdisplay.classList.remove("cards");
-// }
 const baseURL = "https://jkweber236.github.io/wdd230/";
 const infoURL = "https://jkweber236.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector("#cards")
 const list = document.querySelector("#list")
 
-const gridbutton = document.querySelector("#grid-view");
-const listbutton = document.querySelector("#list-view");
+const gridbutton = document.querySelector("#gridview");
+const listbutton = document.querySelector("#listview");
 const cardsDisplay = document.querySelector("#cards");
 const listDisplay = document.querySelector("#list")
 
