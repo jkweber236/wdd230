@@ -519,3 +519,13 @@ legend {
     height: 10rem;
     width: auto;
 }
+
+section.card {
+    background-color: var(--background-color);
+    margin: 2rem;
+    max-width: 400px;
+}
+
+img.logo {
+    padding: 2rem;
+}
