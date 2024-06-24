@@ -518,6 +518,7 @@ legend {
 #cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .directory #cards img {
@@ -527,6 +528,7 @@ legend {
 section.card {
     background-color: var(--background-color);
     margin: 2rem;
+    height: 310px;
     width: 25rem;
     padding-bottom: 1rem;
 }
@@ -543,6 +545,7 @@ img.logo {
     padding: 2rem 1rem 0.25rem;
     display: flex;
     margin: auto;
-    width: 80%;
-    min-width: 300px;
+    height: 200px;
+    width: auto;
+    /* min-width: 300px; */
 }
