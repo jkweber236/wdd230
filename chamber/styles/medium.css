@@ -245,4 +245,8 @@
         display: flex;
         padding: 2rem 4rem;
     }
+
+    #cards {
+        display: flex;
+    }
 }
