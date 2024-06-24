@@ -240,4 +240,9 @@
         background-color: var(--accent-color);
         color: var(--secondary-color);
     }
+
+    #list {
+        display: flex;
+        padding: 2rem 4rem;
+    }
 }

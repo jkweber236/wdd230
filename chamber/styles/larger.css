@@ -377,4 +377,9 @@
     form button {
         padding: 0.5rem;
     }
+
+    #list {
+        display: flex;
+        padding: 2rem 4rem;
+    }
 }
