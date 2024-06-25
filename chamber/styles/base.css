@@ -515,19 +515,21 @@ legend {
     color: var(--secondary-color);
 }
 
-#cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+div#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    width: 100%;
 }
 
 section.card {
     background-color: var(--background-color);
-    margin: 2rem;
+    margin: 2rem auto;
     height: 300px;
-    width: 25rem;
+    width: 22rem;
     padding-bottom: 1rem;
-    flex-direction: row;
+    border: 2px solid black;
+    box-shadow: 8px 8px 15px black;
 }
 
 .card p,
@@ -571,8 +573,26 @@ section.item a {
     background-color: var(--accent-color);
 }
 
+h2#title {
+    margin-bottom: 1rem;
+    padding: 3rem 0 1rem;
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    margin-top: 0;
+}
+
 .dark-mode h2#title {
-    margin: 0;
-    padding: 2rem 0 1rem;
     color: white;
+}
+
+#fourth {
+    margin: auto;
+}
+
+#gridview,
+#listview {
+    padding: 1rem;
+    margin: 0 1rem;
+    background-color: var(--accent-color);
+    font-size: 1.25rem;
 }

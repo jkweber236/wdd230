@@ -383,7 +383,7 @@
         padding: 2rem 4rem;
     }
 
-    #cards {
-        display: flex;
+    section.card {
+        width: 25rem;
     }
 }
