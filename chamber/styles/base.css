@@ -575,6 +575,10 @@ section.item a {
     background-color: var(--accent-color);
 }
 
+#list section:nth-child(even) {
+    background-color: white;
+}
+
 h2#title {
     margin-bottom: 1rem;
     padding: 3rem 0 1rem;
