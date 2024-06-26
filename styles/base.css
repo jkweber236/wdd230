@@ -142,6 +142,13 @@ iframe {
 
 }
 
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 footer {
     background-color: #69A197;
     padding: 0.5%;
