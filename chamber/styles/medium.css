@@ -250,4 +250,9 @@
         width: 90%;
         margin: auto;
     }
+
+    #banner {
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
 }

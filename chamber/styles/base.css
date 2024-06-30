@@ -179,13 +179,14 @@ main {
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.6);
     cursor: pointer;
     color: var(--secondary-color);
+    text-decoration: none;
 }
 
 #action:visited {
     color: black;
 }
 
-#ction:hover {
+#action:hover {
     color: rgb(70, 70, 70);
 }
 
@@ -623,4 +624,33 @@ figure {
 
 .forecast-title {
     background-color: var(--secondary-color);
+}
+
+#banner {
+    position: sticky;
+    background-color: var(--accent-color);
+    padding: 0.25rem;
+    text-align: center;
+    font-size: 1rem;
+    z-index: 1000;
+    font-family: 'Karla', sans-serif;
+}
+
+#banner h3 {
+    width: 80%;
+    margin: 1rem auto;
+    color: var(--secondary-color);
+}
+
+#banner.close {
+    display: none;
+}
+
+#bannerButton {
+    position: absolute;
+    background-color: var(--secondary-color);
+    right: 6px;
+    top: 6px;
+    color: var(--accent-color);
+    font-weight: bold;
 }
