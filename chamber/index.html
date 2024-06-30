@@ -71,14 +71,27 @@
             </section>
             <section class="section3">
                 <h2>Weather</h2>
-                <div>
-                    <input id="temperature" type="number" placeholder="Temperature"><br>
-                    <input id="windspeed" type="number" placeholder="Wind Speed"><br>
-                    <button onclick="getWindChill()">Submit</button>
-                </div>
-                <div>
-                    <p class="windchill">Wind Chill: </p>
-                </div>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <div id="weather-info">
+                        <span id="current-temp"> </span> &nbsp;-&nbsp;
+                        <figcaption> </figcaption>
+                    </div>
+                </figure>
+                <table id="forecast-table">
+                    <caption>Nampa 3-Day Weather Forecast</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="3" class="forecast-title">3-Day Forecast</th>
+                        </tr>
+                        <tr>
+                            <th>Date</th>
+                            <th>High</th>
+                            <th>Low</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </section>
         </div>
     </main>
@@ -106,6 +119,7 @@
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
