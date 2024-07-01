@@ -54,9 +54,6 @@
     }
 
     .hero-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
     }
 
@@ -175,10 +172,6 @@
         grid-column: 2/3;
         grid-row: 2/3;
         width: 75%;
-    }
-
-    section p {
-        padding: 1rem;
     }
 
     .section2 p {
@@ -397,5 +390,10 @@
     #banner {
         padding: 1rem;
         font-size: 1.25rem;
+    }
+
+    #weather-info {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
     }
 }

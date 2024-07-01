@@ -603,6 +603,7 @@ h2#title {
 #weather-icon {
     height: 100%;
     justify-self: left;
+    margin: auto 0;
 }
 
 figure {
@@ -615,7 +616,6 @@ figure {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: auto 1rem;
 }
 
 #forecast-table tbody:nth-child(odd) {

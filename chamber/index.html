@@ -45,8 +45,10 @@
     </header>
     <main class="home">
         <div class="hero-section">
-            <source srcset="images/chamber-hero-small.webp" media="(max-width: 650px)">
-            <img id="hero" src="images/chamber-hero.webp" alt="Nampa Train Depot Museum">
+            <picture>
+                <source srcset="images/chamber-hero-small.webp" media="(max-width: 650px)">
+                <img id="hero" src="images/chamber-hero.webp" alt="Nampa Train Depot Museum">
+            </picture>
             <a id="action" class="btn" href="join.html">Join the Chamber!</a>
         </div>
         <div class="site-content">
@@ -77,9 +79,10 @@
             <section class="section3">
                 <h2>Weather</h2>
                 <figure>
-                    <img id="weather-icon" src="" alt="">
+                    <img id="weather-icon" src="images/placeholder.webp" alt="Weather Icon">
                     <div id="weather-info">
-                        <span id="current-temp"> </span> &nbsp;-&nbsp;
+                        <p id="current-temp"></p>
+                        <p>&nbsp;-&nbsp;</p>
                         <p id="weather-desc"></p>
                     </div>
                 </figure>
