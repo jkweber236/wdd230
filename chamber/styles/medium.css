@@ -48,7 +48,7 @@
 
     .switch {
         top: 2rem;
-        right: 4%;
+        right: 2%;
         width: 42px;
         height: 26px;
     }
@@ -251,8 +251,8 @@
         margin: auto;
     }
 
-    #banner {
-        padding: 1rem;
+    #banner h3 {
         font-size: 1.25rem;
+        padding: 1rem;
     }
 }
