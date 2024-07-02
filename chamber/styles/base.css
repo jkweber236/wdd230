@@ -203,7 +203,7 @@ main {
     padding: 1rem;
     padding-top: 0;
     border: 1px solid gray;
-    background-color: var(--background-color);
+    background-color: var(--accent-color);
 }
 
 section.section3 {
@@ -218,10 +218,6 @@ section.section3 {
     margin-bottom: 0.5rem;
 }
 
-.section1 p {
-    border-bottom: 1px solid gray;
-}
-
 .section2 {
     width: 80%;
     margin: 1rem auto 2rem auto;
@@ -231,17 +227,6 @@ section.section3 {
     border: 1px solid gray;
     background-color: var(--background-color);
     padding: 1rem;
-}
-
-.section-link {
-    text-align: center;
-    display: block;
-    text-align: center;
-    margin: 1rem auto 0 auto;
-}
-
-.section-link:visited {
-    color: var(--secondary-color);
 }
 
 section h2 {
@@ -442,7 +427,7 @@ thead th {
 }
 
 tbody tr:nth-child(even) {
-    background-color: var(--accent-color);
+    background-color: var(--background-color);
 }
 
 tbody tr td {
@@ -657,4 +642,29 @@ figure {
     top: 6px;
     color: var(--accent-color);
     font-weight: bold;
+}
+
+.section1 #cards {
+    display: block;
+}
+
+.section1 #cards .card {
+    display: grid;
+    grid-template-columns: 1fr 1.75fr;
+    margin: 1rem auto;
+    width: 85%;
+    height: 8rem;
+}
+
+.section1 img {
+    height: 100px;
+    margin: auto 0;
+    grid-row: 1/4;
+}
+
+.section1 p,
+.section1 a {
+    grid-column: 2/3;
+    text-align: center;
+    margin: auto;
 }

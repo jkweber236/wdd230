@@ -1,4 +1,3 @@
-const baseURL = "https://jkweber236.github.io/wdd230/";
 const infoURL = "https://jkweber236.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector("#cards")
 const list = document.querySelector("#list")

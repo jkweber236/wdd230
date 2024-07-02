@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) and (max-width: 1000px) {
+@media screen and (min-width: 650px) and (max-width: 950px) {
     header {
         display: grid;
         grid-template-rows: auto auto;
@@ -254,5 +254,13 @@
     #banner h3 {
         font-size: 1.25rem;
         padding: 1rem;
+    }
+
+    .section1 #cards .card {
+        width: 80%;
+    }
+
+    .section1 img {
+        margin: auto;
     }
 }
