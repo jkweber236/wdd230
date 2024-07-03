@@ -11,9 +11,7 @@ async function GetInfo() {
         const data = await response.json();
         displayCards(data.companies)
         displayList(data.companies)
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
+    } catch (error) { }
 }
 
 function displayCards(companies) {

@@ -17,9 +17,7 @@ async function getWeather() {
             throw Error(await response.text())
         }
     }
-    catch (error) {
-        console.log(error);
-    }
+    catch (error) { }
 }
 
 function displayResults(data) {
