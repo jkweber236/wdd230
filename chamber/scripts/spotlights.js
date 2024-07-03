@@ -10,7 +10,7 @@ function getHighStatusCompanies(companies) {
     const highStatus = companies.filter(company =>
         company.membership === "Silver" || company.membership === "Gold"
     );
-    return highStatus.sort(() => 0.5 - Math.random()).slice(0, 3); // Randomly select 3 companies
+    return highStatus.sort(() => 0.5 - Math.random()).slice(0, 3);
 }
 
 function displaySpotlights(companies) {

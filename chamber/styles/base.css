@@ -668,3 +668,12 @@ figure {
     text-align: center;
     margin: auto;
 }
+
+.thankyou {
+    text-align: center;
+    padding: 8rem 2.5rem 10rem;
+}
+
+.thankyou.dark-mode {
+    color: white;
+}
