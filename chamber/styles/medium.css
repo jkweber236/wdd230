@@ -87,14 +87,14 @@
         padding-bottom: 2rem;
     }
 
-    .section1,
-    .section2,
-    .section3 {
+    .spotlights,
+    .events,
+    .weather {
         width: 80%;
         margin: 1rem auto 2rem auto;
     }
 
-    .section1 {
+    .spotlights {
         margin-top: 2.5rem;
     }
 
@@ -102,7 +102,7 @@
         display: none;
     }
 
-    section.section3 {
+    section.weather {
         margin-bottom: 1rem;
     }
 
@@ -256,11 +256,11 @@
         padding: 1rem;
     }
 
-    .section1 #cards .card {
+    .spotlights #cards .card {
         width: 80%;
     }
 
-    .section1 img {
+    .spotlights img {
         margin: auto;
     }
 }

@@ -193,12 +193,8 @@ main {
     color: rgb(70, 70, 70);
 }
 
-.events img {
-    display: none;
-}
-
-.section1,
-.section3 {
+.spotlights,
+.weather {
     margin: 1.5rem;
     padding: 1rem;
     padding-top: 0;
@@ -206,24 +202,24 @@ main {
     background-color: var(--accent-color);
 }
 
-section.section3 {
+section.weather {
     margin-bottom: 0.5rem;
 }
 
-.section3 div {
+.weather div {
     text-align: center;
 }
 
-.section3 input {
+.weather input {
     margin-bottom: 0.5rem;
 }
 
-.section2 {
+.events {
     width: 80%;
     margin: 1rem auto 2rem auto;
 }
 
-.section2 p {
+.events p {
     border: 1px solid gray;
     background-color: var(--background-color);
     padding: 1rem;
@@ -294,7 +290,7 @@ main.dark-mode {
     background-color: var(--secondary-color);
 }
 
-.dark-mode .section2 h2 {
+.dark-mode .events h2 {
     color: var(--accent-color);
 }
 
@@ -644,11 +640,11 @@ figure {
     font-weight: bold;
 }
 
-.section1 #cards {
+.spotlights #cards {
     display: block;
 }
 
-.section1 #cards .card {
+.spotlights #cards .card {
     display: grid;
     grid-template-columns: 1fr 1.75fr;
     margin: 1rem auto;
@@ -656,14 +652,14 @@ figure {
     height: 8rem;
 }
 
-.section1 img {
+.spotlights img {
     height: 100px;
     margin: auto 0;
     grid-row: 1/4;
 }
 
-.section1 p,
-.section1 a {
+.spotlights p,
+.spotlights a {
     grid-column: 2/3;
     text-align: center;
     margin: auto;

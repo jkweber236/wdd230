@@ -88,9 +88,9 @@
         font-size: 1.75rem;
     }
 
-    .section1,
-    .section2,
-    .section3 {
+    .spotlights,
+    .events,
+    .weather {
         margin: 2rem;
         font-size: 1.25rem;
         margin: auto;
@@ -103,7 +103,7 @@
         margin: 0 3.5rem;
     }
 
-    .section1 {
+    .spotlights {
         grid-column: 1/2;
         margin-top: 1rem;
         margin-bottom: 2rem;
@@ -111,7 +111,7 @@
         grid-row: 1/3;
     }
 
-    .section1 p {
+    .spotlights p {
         border-bottom: none;
         margin: 1rem 0.5rem;
     }
@@ -146,26 +146,20 @@
         grid-row: 3;
     }
 
-    .section2 {
+    .events {
         margin-top: 1rem;
         grid-column: 2/3;
         grid-row: 1/2;
         width: 90%;
     }
 
-    .section3 {
+    .weather {
         grid-column: 2/3;
         grid-row: 2/3;
         width: 75%;
     }
 
-    .section2 p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    section.section3 {
+    section.weather {
         margin-top: 0rem;
         margin-bottom: 3rem;
         padding-top: 0rem;
@@ -173,7 +167,7 @@
 
     }
 
-    .section3 p {
+    .weather p {
         margin-top: 0.25rem;
     }
 
@@ -181,21 +175,19 @@
         display: none;
     }
 
-    .events {
+    .events h3,
+    .events p {
         display: block;
-        margin-top: 2rem;
-        width: 90%;
-        margin: 1rem auto auto;
+        width: 85%;
     }
 
     .events h3 {
-        margin-bottom: 0.5rem;
+        margin: 1.25rem 0 0.5rem;
+        padding-left: 2rem;
     }
 
-    .event1,
-    .event2 {
-        margin: auto;
-        margin-bottom: 1.5rem;
+    .events p {
+        margin: 0 auto 1.5rem;
         font-size: 1rem;
     }
 
@@ -301,6 +293,7 @@
 
     .city-council {
         grid-column: 1/2;
+        margin-top: 1rem;
     }
 
     .city-council p {
@@ -382,7 +375,7 @@
         margin-left: 0.5rem;
     }
 
-    .section1 #cards .card {
+    .spotlights #cards .card {
         display: grid;
         grid-template-columns: 1fr 1.75fr;
         margin: 3rem auto;
@@ -390,7 +383,7 @@
         font-size: large;
     }
 
-    .section1 img {
+    .spotlights img {
         max-height: 150px;
         margin: auto 0;
         grid-row: 1/4;
@@ -398,8 +391,8 @@
         padding-top: 0;
     }
 
-    .section1 p,
-    .section1 a {
+    .spotlights p,
+    .spotlights a {
         grid-column: 2/3;
         text-align: center;
         margin: auto;
