@@ -155,6 +155,7 @@ input:checked+.slider:before {
 
 nav a:hover {
     background-color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 main {
