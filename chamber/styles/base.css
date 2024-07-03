@@ -39,7 +39,7 @@ header h1 {
     align-items: center;
 }
 
-#menu {
+.menu {
     background: none;
     border: none;
     position: absolute;
@@ -49,13 +49,13 @@ header h1 {
     color: var(--accent-color);
 }
 
-#menu::before {
+.menu::before {
     content: "☰";
     display: flex;
     align-items: center;
 }
 
-#menu.open::before {
+.menu.open::before {
     content: "✖";
 }
 
@@ -294,7 +294,11 @@ main.dark-mode {
     color: var(--accent-color);
 }
 
-.dark-mode #menu {
+.dark-mode .events h3 {
+    color: white;
+}
+
+.dark-mode .menu {
     color: var(--primary-color);
 }
 
@@ -377,7 +381,7 @@ main.dark-mode {
     margin: 0;
 }
 
-#contact-info,
+#user-info,
 #business-info {
     background: var(--background-color);
     padding: 1.5rem;
@@ -500,7 +504,7 @@ legend {
     color: var(--secondary-color);
 }
 
-div#cards {
+div.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 10px;
@@ -534,7 +538,7 @@ img.logo {
     width: auto;
 }
 
-#list {
+.list {
     display: flex;
     padding: 2rem 1rem;
 }
@@ -556,11 +560,11 @@ section.item a {
     padding: 1rem 0;
 }
 
-#list section:nth-child(odd) {
+.list section:nth-child(odd) {
     background-color: var(--accent-color);
 }
 
-#list section:nth-child(even) {
+.list section:nth-child(even) {
     background-color: white;
 }
 
@@ -640,11 +644,11 @@ figure {
     font-weight: bold;
 }
 
-.spotlights #cards {
+.spotlights .cards {
     display: block;
 }
 
-.spotlights #cards .card {
+.spotlights .cards .card {
     display: grid;
     grid-template-columns: 1fr 1.75fr;
     margin: 1rem auto;

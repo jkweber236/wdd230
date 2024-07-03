@@ -39,7 +39,7 @@ function displaySpotlights(companies) {
         card.appendChild(number);
         card.appendChild(website);
 
-        document.querySelector('#cards').appendChild(card);
+        document.querySelector('.cards').appendChild(card);
     });
 }
 

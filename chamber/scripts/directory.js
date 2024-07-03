@@ -1,11 +1,11 @@
 const infoURL = "https://jkweber236.github.io/wdd230/chamber/data/members.json";
-const cards = document.querySelector("#cards")
-const list = document.querySelector("#list")
+const cards = document.querySelector(".cards")
+const list = document.querySelector(".list")
 
 const gridbutton = document.querySelector("#gridview");
 const listbutton = document.querySelector("#listview");
-const cardsDisplay = document.querySelector("#cards");
-const listDisplay = document.querySelector("#list")
+const cardsDisplay = document.querySelector(".cards");
+const listDisplay = document.querySelector(".list")
 
 async function GetInfo() {
     const response = await fetch(infoURL);
