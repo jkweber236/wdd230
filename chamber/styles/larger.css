@@ -94,13 +94,13 @@
         margin: 2rem;
         font-size: 1.25rem;
         margin: auto;
-        padding: 0 1.75rem;
+        padding: 0 2rem;
     }
 
     .site-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 0 4rem;
+        margin: 0 3.5rem;
     }
 
     .section1 {
@@ -361,7 +361,7 @@
 
     #forecast-table {
         height: auto;
-        width: 90%;
+        width: 95%;
         margin: auto;
         margin-bottom: 1rem;
     }
