@@ -31,7 +31,7 @@ function displayCards(companies) {
         card.setAttribute('class', "card")
         logo.setAttribute('class', "logo")
         logo.setAttribute('src', company.image);
-        logo.setAttribute('alt', `${company.name}'s logo`);
+        logo.setAttribute('alt', `${company.name}`);
         logo.setAttribute('loading', "lazy");
 
         website.setAttribute('href', company.website)

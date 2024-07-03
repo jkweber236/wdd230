@@ -81,6 +81,12 @@ nav a {
     width: 100%;
 }
 
+nav a.active {
+    font-weight: bold;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
 .switch {
     position: absolute;
     transform: translateY(-50%);
