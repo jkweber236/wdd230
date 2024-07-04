@@ -254,27 +254,26 @@
         flex-direction: column;
         order: -1;
         width: 90%;
-        margin-left: 5%;
-        margin-right: auto;
+        margin-left: auto;
+        margin-right: 7%;
     }
 
     #lastVisit {
         grid-column: 1/2;
         text-align: center;
+        margin-left: 10%;
     }
 
     .local-photos {
         grid-column: 2 / 3;
-        width: 90%;
+        width: 80%;
         height: auto;
     }
 
     .demographics {
         grid-column: 1/2;
         grid-row: 1/3;
-        margin-left: 10%;
-        margin-right: auto;
-        text-align: center;
+        width: 80%;
     }
 
     .demographics p {
@@ -294,6 +293,7 @@
     .city-council {
         grid-column: 1/2;
         margin-top: 1rem;
+        margin-left: 10%;
     }
 
     .city-council p {
