@@ -108,7 +108,7 @@
 
     #discover {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         padding-top: 2rem;
         padding-bottom: 2rem;
         align-items: start;
@@ -119,11 +119,15 @@
         text-align: center;
     }
 
+    .right-content {
+        margin: auto;
+    }
+
     .demographics {
-        grid-column: 1/2;
         text-align: center;
-        margin-left: 10%;
+        margin-left: auto;
         margin-right: auto;
+        width: 80%;
     }
 
     .demographics p {
@@ -133,9 +137,9 @@
     .local-photos {
         grid-column: 2/3;
         width: 90%;
-        margin-left: 5%;
+        margin-left: auto;
         height: auto;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .local-photos img:hover {
@@ -150,16 +154,15 @@
 
     .city-council {
         grid-column: 1/2;
+        margin: auto;
     }
 
     .city-council p {
         padding: 0;
     }
 
-    .left-content {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: auto;
+    .event-list {
+        width: 80%;
     }
 
     .join {
