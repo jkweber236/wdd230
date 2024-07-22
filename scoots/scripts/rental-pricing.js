@@ -13,22 +13,42 @@ function displayPrices(rentals) {
 
     rentals.forEach((rental) => {
         const reservationRow = document.createElement("tr");
-        const walkInRow = document.createElement("tr");
-        let name = document.createElement("td");
-        let maxPersons = document.createElement("td");
-        let halfDay = document.createElement("td");
-        let fullDay = document.createElement("td");
 
-        name.innerHTML = rental.name;
-        maxPersons.innerHTML = rental.maxriders;
+        let reserveName = document.createElement("td");
+        let reserveMaxPersons = document.createElement("td");
+        let reserveHalfDay = document.createElement("td");
+        let reserveFullDay = document.createElement("td");
 
-
-
+        reserveName.innerHTML = rental.name;
+        reserveMaxPersons.innerHTML = rental.maxriders;
         reserveHalfDay.innerHTML = rental.reservation.half;
         reserveFullDay.innerHTML = rental.reservation.full;
 
+        reservationRow.appendChild(reserveName);
+        reservationRow.appendChild(reserveMaxPersons);
+        reservationRow.appendChild(reserveHalfDay);
+        reservationRow.appendChild(reserveFullDay);
+
+        reservationTable.querySelector("tbody").appendChild(reservationRow);
+
+        const walkInRow = document.createElement("tr");
+
+        let walkInName = document.createElement("td");
+        let walkInMaxPersons = document.createElement("td");
+        let walkInHalfDay = document.createElement("td");
+        let walkInFullDay = document.createElement("td");
+
+        walkInName.innerHTML = rental.name;
+        walkInMaxPersons.innerHTML = rental.maxriders;
         walkInHalfDay.innerHTML = rental.walkin.half;
-        walkInFullDay.innerHTML = rental.walkin.full
+        walkInFullDay.innerHTML = rental.walkin.full;
+
+        walkInRow.appendChild(walkInName);
+        walkInRow.appendChild(walkInMaxPersons);
+        walkInRow.appendChild(walkInHalfDay);
+        walkInRow.appendChild(walkInFullDay);
+
+        walkInTable.querySelector("tbody").appendChild(reservationRow);
     })
 }
 
