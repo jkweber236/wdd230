@@ -1,0 +1,80 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/scoots.webp" alt="Scoots Logo">
+        <h1>Scoots</h1>
+        <button class="menu" aria-label="Menu"></button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="#">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <form id="reserve" method="get" action="thankyou.html">
+            <fieldset id="user-info">
+                <legend>Personal Info</legend>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="state-country">Home State/Country:</label><br>
+                <input type="text" id="state-country" name="state-country" required><br>
+            </fieldset>
+            <fieldset id="rental-info">
+                <legend>Rental Info</legend>
+                <label for="start-date">Start Date:</label><br>
+                <input type="date" id="start-date" name="start-date" required><br>
+                <label for="end-date">End Date:</label><br>
+                <input type="date" id="end-date" name="end-date" required><br>
+                <label for="period">Period:</label><br>
+                <input type="text" id="period" name="period" required><br>
+                <label for="rental-type">Rental Type:</label><br>
+                <input type="text" id="rental-type" name="rental-type" required><br>
+                <label for="cruise-line">Cruise Line (If Applicable):</label><br>
+                <input type="text" id="cruise-line" name="cruise-line" required><br>
+                <label>Additional Comments:<br>
+                    <textarea id="comments" name="comments"></textarea>
+                </label>
+            </fieldset>
+            <label><button type="submit" id="submitBtn">Reserve Vehicle</button></label>
+        </form>
+    </main>
+    <footer>
+
+        <img class="logo" src="images/scoots.webp" alt="Scoots Logo">
+        <div class="media-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img id="facebook" src="images/facebook.webp" alt="Facebook Logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img id="instagram" src="images/instagram.webp" alt="Instagram Logo">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img id="twitter" src="images/twitter.webp" alt="Twitter Logo">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/responsive-menu.js"></script>
+</body>
+
+</html>

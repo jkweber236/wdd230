@@ -1,0 +1,10 @@
+@media screen and (min-width: 951px) {
+
+    header {
+        display: flex;
+    }
+
+    nav a {
+        background-color: var(--primary-color)
+    }
+}
