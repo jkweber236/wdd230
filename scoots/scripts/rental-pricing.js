@@ -1,15 +1,19 @@
 const pricingJSON = "https://jkweber236.github.io/wdd230/scoots/data/prices.json";
 
 async function GetInfo() {
-    const response = await fetch(infoURL);
+    const response = await fetch(pricingJSON);
     const data = await response.json();
-    displayPricess(data.rentals);
+    displayPrices(data.rentals);
 }
 
 function displayPrices(rentals) {
 
-    const reservationTable = document.querySelectorAll("table")[1];
-    const walkInTable = document.querySelectorAll("table")[2];
+    const reservationTable = document.querySelectorAll("table")[0];
+    const walkInTable = document.querySelectorAll("table")[1];
+
+    const reservationBody = reservationTable.querySelector("tbody");
+    const walkInBody = walkInTable.querySelector("tbody");
+
 
     rentals.forEach((rental) => {
         const reservationRow = document.createElement("tr");
@@ -21,15 +25,15 @@ function displayPrices(rentals) {
 
         reserveName.innerHTML = rental.name;
         reserveMaxPersons.innerHTML = rental.maxriders;
-        reserveHalfDay.innerHTML = rental.reservation.half;
-        reserveFullDay.innerHTML = rental.reservation.full;
+        reserveHalfDay.innerHTML = rental.reservation[0].half;
+        reserveFullDay.innerHTML = rental.reservation[0].full;
 
         reservationRow.appendChild(reserveName);
         reservationRow.appendChild(reserveMaxPersons);
         reservationRow.appendChild(reserveHalfDay);
         reservationRow.appendChild(reserveFullDay);
 
-        reservationTable.querySelector("tbody").appendChild(reservationRow);
+        reservationBody.appendChild(reservationRow);
 
         const walkInRow = document.createElement("tr");
 
@@ -40,17 +44,19 @@ function displayPrices(rentals) {
 
         walkInName.innerHTML = rental.name;
         walkInMaxPersons.innerHTML = rental.maxriders;
-        walkInHalfDay.innerHTML = rental.walkin.half;
-        walkInFullDay.innerHTML = rental.walkin.full;
+        walkInHalfDay.innerHTML = rental.walkin[0].half;
+        walkInFullDay.innerHTML = rental.walkin[0].full;
 
         walkInRow.appendChild(walkInName);
         walkInRow.appendChild(walkInMaxPersons);
         walkInRow.appendChild(walkInHalfDay);
         walkInRow.appendChild(walkInFullDay);
 
-        walkInTable.querySelector("tbody").appendChild(reservationRow);
+        walkInBody.appendChild(walkInRow);
     })
 }
+
+GetInfo();
 
 // const forecastDays = Object.keys(days).slice(0, 3);
 // forecastDays.forEach(day => {

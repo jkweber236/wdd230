@@ -3,98 +3,74 @@
         {
             "name": "Honda Metro Scooter",
             "maxriders": "1",
-            "reservation": [
-                {
-                    "half": "$20",
-                    "full": "$30"
-                }
-            ],
-            "walkin": [
-                {
-                    "half": "$25",
-                    "full": "$35"
-                }
-            ]
+            "reservation": {
+                "half": "$20",
+                "full": "$30"
+            },
+            "walkin": {
+                "half": "$25",
+                "full": "$35"
+            }
         },
         {
             "name": "Honda Dio Scooter",
             "maxriders": "2",
-            "reservation": [
-                {
-                    "half": "$30",
-                    "full": "$40"
-                }
-            ],
-            "walkin": [
-                {
-                    "half": "$35",
-                    "full": "$45"
-                }
-            ]
+            "reservation": {
+                "half": "$30",
+                "full": "$40"
+            },
+            "walkin": {
+                "half": "$35",
+                "full": "$45"
+            }
         },
         {
             "name": "Honda PCX150 Scooter",
             "maxriders": "2",
-            "reservation": [
-                {
-                    "half": "$40",
-                    "full": "$50"
-                }
-            ],
-            "walkin": [
-                {
-                    "half": "$55",
-                    "full": "$65"
-                }
-            ]
+            "reservation": {
+                "half": "$40",
+                "full": "$50"
+            },
+            "walkin": {
+                "half": "$55",
+                "full": "$65"
+            }
         },
         {
             "name": "Honda Pioneer ATV",
             "maxriders": "4",
-            "reservation": [
-                {
-                    "half": "$50",
-                    "full": "$70"
-                }
-            ],
-            "walkin": [
-                {
-                    "half": "$60",
-                    "full": "$80"
-                }
-            ]
+            "reservation": {
+                "half": "$50",
+                "full": "$70"
+            },
+            "walkin": {
+                "half": "$60",
+                "full": "$80"
+            }
         },
         {
             "name": "Jeep Wrangler - 4 door with a/c",
             "maxriders": "5",
-            "reservation": [
-                {
-                    "half": "$70",
-                    "full": "$100"
-                }
-            ],
-            "walkin": [
-                {
-                    "half": "$85",
-                    "full": "$125"
-                }
-            ]
+            "reservation": {
+                "half": "$70",
+                "full": "$100"
+            },
+            "walkin": {
+                "half": "$85",
+                "full": "$125"
+            }
         },
         {
             "name": "Jeep Wrangler - 2 door",
             "maxriders": "4",
-            "reservation": [
-                {
-                    "half": "$60",
-                    "full": "$85"
-                }
-            ],
-            "walkin": [
-                {
-                    "half": "$70",
-                    "full": "$90"
-                }
-            ]
+            "reservation": {
+                "half": "$60",
+                "full": "$85"
+            },
+            "walkin": {
+                "half": "$70",
+                "full": "$90"
+            }
         }
     ]
 }
