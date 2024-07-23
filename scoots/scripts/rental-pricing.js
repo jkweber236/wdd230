@@ -57,38 +57,3 @@ function displayPrices(rentals) {
 }
 
 GetInfo();
-
-// const forecastDays = Object.keys(days).slice(0, 3);
-// forecastDays.forEach(day => {
-//     const row = document.createElement('tr');
-//     const dateCell = document.createElement('td');
-//     const highCell = document.createElement('td');
-//     const lowCell = document.createElement('td');
-
-//     dateCell.textContent = day;
-//     highCell.textContent = `${Math.round(days[day].high)}°F`;
-//     lowCell.textContent = `${Math.round(days[day].low)}°F`;
-
-//     row.appendChild(dateCell);
-//     row.appendChild(highCell);
-//     row.appendChild(lowCell);
-
-//     forecastTable.appendChild(row);
-// });
-
-
-// companies.forEach((company) => {
-//     let card = document.createElement("section")
-//     let logo = document.createElement("img")
-//     let address = document.createElement("p")
-//     let number = document.createElement("p")
-//     let website = document.createElement("a")
-//     address.innerHTML = company.address
-//     number.innerHTML = company.phone
-//     website.innerHTML = "Website"
-
-//     card.setAttribute('class', "card")
-//     logo.setAttribute('class', "logo")
-//     logo.setAttribute('src', company.image);
-//     logo.setAttribute('alt', `${company.name}'s logo`);
-//     logo.setAttribute('loading', "lazy");
