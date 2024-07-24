@@ -226,13 +226,10 @@ li {
     margin: auto;
 }
 
-#contact main p {
+#contact p {
     width: 90%;
     margin: auto;
     text-align: left;
-}
-
-#contact p {
     padding: 0.25rem;
 }
 
@@ -246,10 +243,6 @@ li {
     width: 200px;
     margin-left: 10px;
 }
-
-/* #contact textarea {
-    width: 200px;
-} */
 
 #reservations fieldset {
     margin: 1.5rem auto;
@@ -288,11 +281,16 @@ label {
     font-weight: bold;
 }
 
-#contact main iframe {
+#contact iframe {
     width: 90%;
     height: 400px;
     margin: auto;
     text-align: center;
+}
+
+
+caption {
+    caption-side: bottom;
 }
 
 footer {

@@ -42,4 +42,52 @@
         margin: 0;
         top: 35%;
     }
+
+    #rentals table {
+        width: 80%;
+        margin: 2.5rem auto;
+    }
+
+    #reservations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #reservations fieldset {
+        width: 70%;
+    }
+
+    #reservations h2,
+    #reservations ul {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #reservations ul {
+        margin-top: 4rem;
+    }
+
+    #reservations form {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+    }
+
+    #reservations h2 {
+        width: 85%;
+        margin: 2.5rem auto;
+    }
+
+    #reservations ul {
+        margin-top: 6.5rem;
+    }
+
+    #contact-us {
+        width: 50%;
+    }
+
+    #contact-us input,
+    #contact-us textarea {
+        width: 70%;
+    }
 }
