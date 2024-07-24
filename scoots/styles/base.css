@@ -3,11 +3,11 @@
 :root {
     --primary-color: #D8786D;
     --secondary-color: #f5ba7f;
-    --background-color: #fadcbf;
+    --background-color: #fbe1c9;
     --accent-color: #622227;
     --header-font: "Montserrat";
     --main-font: "Short Stack";
-    /* #EDB680; #f8d4b1*/
+    /* #EDB680; #f8d4b1 #fadcbf*/
 }
 
 body {
@@ -193,17 +193,6 @@ table {
     margin: 2.25rem 1.5rem;
 }
 
-#rentals li {
-    text-align: left;
-    width: 90%;
-    margin: auto;
-}
-
-#rentals ul {
-    margin-bottom: 2rem;
-    width: 90%;
-}
-
 table thead tr:first-child th:first-child {
     padding: 1rem;
     background-color: var(--accent-color);
@@ -223,8 +212,87 @@ tr:nth-child(odd) {
     background-color: var(--background-color)
 }
 
+#reservations h2 {
+    margin-top: 2rem;
+}
+
+ul {
+    margin-bottom: 1.5rem;
+}
+
+li {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
+
+#contact main p {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+#contact p {
+    padding: 0.25rem;
+}
+
+#contact-us {
+    width: 70%;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+#contact-us input {
+    width: 200px;
+    margin-left: 10px;
+}
+
+/* #contact textarea {
+    width: 200px;
+} */
+
 #reservations fieldset {
-    margin: 2rem;
+    margin: 1.5rem auto;
+    width: 60%;
+    text-align: left;
+    padding-bottom: 1rem;
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+#contact-us fieldset {
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+#contact-us p {
+    width: 80%;
+}
+
+label {
+    margin: 0.75rem 0 0;
+    display: block;
+    margin-left: 10px;
+}
+
+#reserve-vehicle {
+    background-color: var(--accent-color);
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+#contact main iframe {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    text-align: center;
 }
 
 footer {

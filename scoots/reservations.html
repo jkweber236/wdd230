@@ -25,37 +25,50 @@
         </nav>
     </header>
     <main>
+        <h2>Rental Services and Agreements</h2>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+        </ul>
         <form id="reserve" method="get" action="thank-you.html">
             <fieldset id="user-info">
                 <legend>Personal Info</legend>
-                <label for="fname">First Name</label><br>
-                <input type="text" id="fname" name="fname" required><br>
-                <label for="lname">Last name</label><br>
-                <input type="text" id="lname" name="lname" required><br>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required><br>
-                <label for="phone">Phone Number</label><br>
-                <input type="tel" id="phone" name="phone" required><br>
-                <label for="state-country">Home State/Country</label><br>
-                <input type="text" id="state-country" name="state-country" required><br>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="state-country">Home State/Country</label>
+                <input type="text" id="state-country" name="state-country" required>
             </fieldset>
             <fieldset id="rental-info">
                 <legend>Rental Info</legend>
-                <label for="start-date">Start Date</label><br>
-                <input type="date" id="start-date" name="start-date" required><br>
-                <label for="end-date">End Date</label><br>
-                <input type="date" id="end-date" name="end-date" required><br>
-                <label for="period">Period</label><br>
-                <input type="text" id="period" name="period" required><br>
-                <label for="rental-type">Rental Type</label><br>
-                <input type="text" id="rental-type" name="rental-type" required><br>
-                <label for="cruise-line">Cruise Line (If Applicable)</label><br>
-                <input type="text" id="cruise-line" name="cruise-line" required><br>
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date" name="start-date" required>
+                <label for="end-date">End Date</label>
+                <input type="date" id="end-date" name="end-date" required>
+                <label for="period">Period</label>
+                <input type="text" id="period" name="period" required>
+                <label for="rental-type">Rental Type</label>
+                <input type="text" id="rental-type" name="rental-type" required>
+                <label for="cruise-line">Cruise Line (If Applicable)</label>
+                <input type="text" id="cruise-line" name="cruise-line" required>
                 <label>Additional Comments<br>
                     <textarea id="comments" name="comments"></textarea>
                 </label>
             </fieldset>
-            <label><button type="submit" id="submitBtn">Reserve Vehicle</button></label>
+            <label><button type="submit" id="reserve-vehicle">Reserve Vehicle</button></label>
         </form>
     </main>
     <footer>

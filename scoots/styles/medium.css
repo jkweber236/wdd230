@@ -1,10 +1,7 @@
 @media screen and (min-width: 650px) {
+
     header {
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto;
-        position: relative;
-        align-items: center;
+        display: flex;
     }
 
     .menu {
@@ -12,9 +9,10 @@
     }
 
     .logo {
-        width: 100px;
+        width: 125px;
+        margin-left: 0.5rem;
         grid-column: 1/2;
-        grid-row: 1/2;
+
     }
 
     h1 {
@@ -22,21 +20,26 @@
         grid-row: 1/2;
     }
 
+
     nav {
         display: flex;
         flex-direction: row;
-        grid-row: 2/3;
-        grid-column: 1/3;
-        width: 100%;
-        z-index: 1;
-        position: relative;
+        margin: auto 1rem;
     }
 
     nav a {
         display: block;
+        background-color: var(--primary-color);
+        margin: auto;
     }
 
-    nav a {
-        display: block;
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-button {
+        font-size: 1.15rem;
+        margin: 0;
+        top: 35%;
     }
 }
