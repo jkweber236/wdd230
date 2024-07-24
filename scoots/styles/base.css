@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital@1&family=Short+Stack&display=swap');
+
 :root {
     --primary-color: #D8786D;
     --secondary-color: #EDB680;
     --accent-color: #622227;
-    --background-color: #cfcfcf;
+    --header-font: "Montserrat";
+    --main-font: "Short Stack";
+}
+
+main {
+    font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--header-font);
 }
 
 #banner {
