@@ -2,10 +2,12 @@
 
 :root {
     --primary-color: #D8786D;
-    --secondary-color: #EDB680;
+    --secondary-color: #f5ba7f;
+    --background-color: #fadcbf;
     --accent-color: #622227;
     --header-font: "Montserrat";
     --main-font: "Short Stack";
+    /* #EDB680; #f8d4b1*/
 }
 
 body {
@@ -178,6 +180,51 @@ h3 {
 
 #temp-desc {
     margin-top: 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 2.25rem 1.5rem;
+}
+
+#rentals li {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
+
+#rentals ul {
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+table thead tr:first-child th:first-child {
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+}
+
+table thead tr:nth-child(2) th {
+    background-color: var(--primary-color);
+    color: var(--accent-color)
+}
+
+tr:nth-child(even) {
+    background-color: var(--secondary-color)
+}
+
+tr:nth-child(odd) {
+    background-color: var(--background-color)
+}
+
+#reservations fieldset {
+    margin: 2rem;
 }
 
 footer {
