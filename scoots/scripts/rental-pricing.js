@@ -23,10 +23,11 @@ function displayPrices(rentals) {
         let reserveHalfDay = document.createElement("td");
         let reserveFullDay = document.createElement("td");
 
+        console.log(rental.reservation.half);
         reserveName.innerHTML = rental.name;
         reserveMaxPersons.innerHTML = rental.maxriders;
-        reserveHalfDay.innerHTML = rental.reservation[0].half;
-        reserveFullDay.innerHTML = rental.reservation[0].full;
+        reserveHalfDay.innerHTML = rental.reservation.half;
+        reserveFullDay.innerHTML = rental.reservation.full;
 
         reservationRow.appendChild(reserveName);
         reservationRow.appendChild(reserveMaxPersons);
@@ -44,8 +45,8 @@ function displayPrices(rentals) {
 
         walkInName.innerHTML = rental.name;
         walkInMaxPersons.innerHTML = rental.maxriders;
-        walkInHalfDay.innerHTML = rental.walkin[0].half;
-        walkInFullDay.innerHTML = rental.walkin[0].full;
+        walkInHalfDay.innerHTML = rental.walkin.half;
+        walkInFullDay.innerHTML = rental.walkin.full;
 
         walkInRow.appendChild(walkInName);
         walkInRow.appendChild(walkInMaxPersons);

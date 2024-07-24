@@ -67,22 +67,5 @@ async function displayForecast(data) {
         forecastTable.appendChild(row);
     });
 }
-// async function getForecast() {
-//     try {
-//         const response = await fetch(threeDayURL);
-//         if (response.ok) {
-//             const data = await response.json();
-//             displayForecast(data);
-//         }
-//         else {
-//             throw Error(await response.text())
-//         }
-//     }
-//     catch (error) {
-
-//     }
-// }
-
-// function displayForecast()
 
 getWeather();

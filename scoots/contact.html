@@ -25,7 +25,20 @@
         </nav>
     </header>
     <main>
-
+        <form id="reserve" method="get" action="thankyou.html">
+            <fieldset id="user-info">
+                <legend>Contact Us</legend>
+                <label for="name">Name</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required><br>
+                <label>Comment<br>
+                    <textarea id="comments" name="comments"></textarea>
+                </label>
+            </fieldset>
+        </form>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1jl9UyfL8sdaZMs_RCvB67tklcVspvjc&ehbc=2E312F"
+            width="640" height="480" loading="lazy"></iframe>
     </main>
     <footer>
         <img class="logo" src="images/scoots.webp" alt="Scoots Logo">
@@ -42,6 +55,7 @@
         </div>
     </footer>
     <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/getdates..js"></script>
 </body>
 
 </html>
