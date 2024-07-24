@@ -1,99 +1,93 @@
-const tempDesc = document.querySelector('#temp-desc');
-const weatherMain = document.querySelector('#weather-main')
-const weatherIcon = document.querySelector('#weather-icon');
-const weatherDesc = document.querySelector('#weather-desc');
-const humidity = document.querySelector('#humidity');
-const nextDayTemp = document.querySelector('#next-day-temp')
-const highTemp = document.querySelector('#max-temp');
-
-const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.42242&lon=-86.92667&units=imperial&appid=452e25a3aabb8cddeafb9392f5338b35'
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=20.42242&lon=-86.92667&units=imperial&appid=452e25a3aabb8cddeafb9392f5338b35";
+const forecasturl = "https://api.openweathermap.org/data/2.5/forecast?lat=20.42242&lon=-86.92667&units=imperial&appid=452e25a3aabb8cddeafb9392f5338b35";
+const highurl = "https://api.openweathermap.org/data/2.5/weather?lat=20.42242&lon=-86.92667&units=imperial&appid=452e25a3aabb8cddeafb9392f5338b35"
+const temperature = document.querySelector("#temp-desc");
+const humidity = document.querySelector("#humidity");
+const icon = document.querySelector("#weather-icon");
+const forecast = document.querySelector("#next-day-temp");
+const maintemp = document.querySelector("#weather-main");
+const hightemp = document.querySelector("#max-temp");
 
 async function getWeather() {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            displayWeather(data);
-            displayForecast(data);
+            displayWeather(data)
+        } else {
+            throw Error(await response.text());
         }
-        else {
-            throw Error(await response.text())
-        }
+    } catch (error) {
     }
-    catch (error) { }
 }
 
 function displayWeather(data) {
+    maintemp.innerHTML = `${data.weather[0].main} `;
+    temperature.innerHTML = `${Math.round(data.main.temp)}&deg;F and ${data.weather[0].description}`;
+    humidity.innerHTML = `Humidity - ${data.main.humidity}%`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    icon.setAttribute("src", iconsrc)
+    icon.setAttribute("alt", data.weather[0].main)
+}
 
-    const currentWeather = data.list[0];
-
-    let temp = Math.round(currentWeather.main.temp);
-    let desc = currentWeather.weather[0].description;
-    tempDesc.innerHTML = `${temp}&deg;F and ${desc}`;
-    weatherMain.innerHTML = currentWeather.weather[0].main;
-    const icon = currentWeather.weather[0].icon;
-    const iconsrc = `https://openweathermap.org/img/w/${icon}.png`;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', currentWeather.weather[0].main);
-    humidity.textContent = `Humidity - ${currentWeather.main.humidity}%`;
+async function getForecast() {
+    try {
+        const response = await fetch(forecasturl);
+        if (response.ok) {
+            const data = await response.json();
+            displayForecast(data)
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+    }
 }
 
 function displayForecast(data) {
-    let maxTemp = 0;
-    const targetHour = 15; // 3:00 PM
-    const today = new Date();
-    const tomorrow = new Date(today);
-    tomorrow.setDate(today.getDate() + 1);
-    const dateToday = today.toISOString().split('T')[0];
-    const dateTomorrow = tomorrow.toISOString().split('T')[0];
 
-    const nextDayForecast = data.list.find(forecast => {
-        const forecastDateTime = new Date(forecast.dt_txt);
-        const forecastDate = forecastDateTime.toISOString().split('T')[0];
-        return forecastDate === dateTomorrow && forecastDateTime.getHours() === targetHour;
-    });
+    let today = new Date();
+    let curryear = today.getFullYear();
+    let month = (today.getMonth() + 1).toString().padStart(2, '0');
+    let day = today.getDate().toString().padStart(2, '0');
 
+    let tomorrow = `${curryear}-${month}-${Number(day) + 1} 15:00:00`;
+    let todaydate = `${curryear}-${month}-${day}`
+    let highest = 0
     data.list.forEach(element => {
-        if (element.dt_txt.split(" ")[0] == dateToday) {
-            if (element.main.temp > maxTemp) {
-                maxTemp = element.main.temp;
+        if (element.dt_txt.split(" ")[0] == todaydate) {
+            if (element.main.temp > highest) {
+                highest = element.main.temp;
             }
         }
+        if (element.dt_txt == tomorrow) {
+            forecast.innerHTML = `Tomorrow at 3pm - ${Math.round(element.main.temp)}&deg;F`;
+        }
     });
-
-    if (maxTemp > 0) {
-        highTemp.innerHTML = `Today's high is ${Math.round(maxTemp)}&deg;F.`;
+    console.log(highest);
+    if (highest > 0) {
+        hightemp.innerHTML = `Today's high is ${Math.round(highest)}&deg;F`
+    } else {
+        getCurr();
     }
-
-    nextDayTemp.innerHTML = `Tomorrow at 3 pm - ${Math.round(nextDayForecast.main.temp)}&deg;F`;
 }
 
-// function displayForecast(data) {
+async function getCurr() {
+    try {
+        const response = await fetch(highurl);
+        if (response.ok) {
+            const data = await response.json();
+            displayCurr(data)
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+    }
+}
 
-//     let today = new Date();
-//     let curryear = today.getFullYear();
-//     // year.innerHTML = curryear;
-//     let month = (today.getMonth() + 1).toString().padStart(2, '0');
-//     let day = today.getDate().toString().padStart(2, '0');
+function displayCurr(data) {
+    hightemp.innerHTML = `Today's high is ${Math.round(data.main.temp_max)}&deg;F`
+}
 
-//     let tomorrow = `${curryear}-${month}-${Number(day) + 1} 15:00:00`;
-//     let todaydate = `${curryear}-${month}-${day}`
-//     let highest = 0
-//     data.list.forEach(element => {
-//         if (element.dt_txt.split(" ")[0] == todaydate) {
-//             if (element.main.temp > highest) {
-//                 highest = element.main.temp;
-//             }
-//         }
-//         if (element.dt_txt == tomorrow) {
-//             nextDayTemp.innerHTML = `Tomorrow at 3pm - ${Math.round(element.main.temp)}&deg;F`;
-//         }
-//     });
-//     if (highest > 0) {
-//         highTemp.innerHTML = `Today's high is ${Math.round(highest)}&deg;F`
-//     } else {
-//         displayWeather(data);
-//     }
-// }
 
 getWeather();
+getForecast();
