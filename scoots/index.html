@@ -15,7 +15,7 @@
 <body>
     <div id="banner">
         <h3 id="max-temp"></h3>
-        <button id="bannerButton"></button>
+        <button id="bannerButton">✖</button>
     </div>
     <header>
         <img class="logo" src="images/scoots.webp" alt="Scoots Logo">
@@ -36,55 +36,66 @@
             <h1>Discover Your Next Adventure</h1>
             <a id="action" class="hero-button" href="reservations.html">Make a Reservation</a>
         </div>
-        <h2>Make the Most of Cozumel</h2>
-        <p>Let Scoots enhance your Cozumel experience with our reliable and diverse rental options. Embrace the island's
-            beauty and create unforgettable memories with ease. Reserve your vehicle today and embark on your perfect
-            adventure.</p>
-        <h2>Rental Options for Every Adventure</h2>
-        <h3>Honda Motor Scooters:</h3>
-        <p>Choose from our range of scooters for solo or two-person rides, perfect for exploring the island.</p>
-        <h3>Side-by-Side ATVs:</h3>
-        <p>Great for adventurous groups, our ATVs are built for rugged trails and exciting off-road experiences.</p>
-        <h3>Jeeps:</h3>
-        <p>Enjoy a comfortable drive with our versatile Jeeps, available in both enclosed and open-air options.</p>
-        <h2>Convenient Vehicle Delivery</h2>
-        <p>To make your experience even easier, we provide free delivery to your Cozumel hotel or rental property for
-            bookings of two days or more. We’ll deliver your vehicle right to you, letting you start your adventure with
-            ease.</p>
-        <h2>Easy Payment Options</h2>
-        <p>Booking is simple with our range of payment options including Google Pay, Apple Pay, cash, credit, debit, and
-            Venmo. Choose the method that works best for you and enjoy a smooth transaction.</p>
-        <h2>Weather in Cozumel</h2>
-        <p id="current-temp"></p>
-        <p id="weather-main"></p>
-        <p id="weather-desc"></p>
-        <img id="weather-icon">
-        <p id="humidity"></p>
-        <p id="next-day-temp"></p>
-        <p>Next Day Forecast</p>
+        <div class="main-content">
+            <h2>Make the Most of Cozumel</h2>
+            <p>Let Scoots enhance your Cozumel experience with our reliable and diverse rental options. Embrace the
+                island's
+                beauty and create unforgettable memories with ease. Reserve your vehicle today and embark on your
+                perfect
+                adventure.</p>
+            <h2>Rental Options for Every Adventure</h2>
+            <h3>Honda Motor Scooters:</h3>
+            <p>Choose from our range of scooters for solo or two-person rides, perfect for exploring the island.</p>
+            <h3>Side-by-Side ATVs:</h3>
+            <p>Great for adventurous groups, our ATVs are built for rugged trails and exciting off-road experiences.</p>
+            <h3>Jeeps:</h3>
+            <p>Enjoy a comfortable drive with our versatile Jeeps, available in both enclosed and open-air options.</p>
+            <h2>Convenient Vehicle Delivery</h2>
+            <p>To make your experience even easier, we provide free delivery to your Cozumel hotel or rental property
+                for
+                bookings of two days or more. We’ll deliver your vehicle right to you, letting you start your adventure
+                with
+                ease.</p>
+            <h2>Easy Payment Options</h2>
+            <p>Booking is simple with our range of payment options including Google Pay, Apple Pay, cash, credit, debit,
+                and
+                Venmo. Choose the method that works best for you and enjoy a smooth transaction.</p>
+            <div id="weather">
+                <h2>Weather in Cozumel</h2>
+                <div id="title-icon">
+                    <p id="weather-main"></p>
+                    <img id="weather-icon">
+                </div>
+                <p id="temp-desc"></p>
+                <p id="humidity"></p>
+                <p id="next-day-temp"></p>
+            </div>
+        </div>
     </main>
     <footer>
         <img class="logo" src="images/scoots.webp" alt="Scoots Logo">
-        <p>Headquarters: Calle 35 Sur, Cozumel Turistico, 77670 Cozumel, Q.R., Mexico</p>
-        <p>Phone: (987)123-4567</p>
-        <p>Email: info@scootsrentals.com</p>
-        <p class="current-year"></p>
-        <p class="last-modified"></p>
-        <div class="media-icons">
-            <a href="https://www.facebook.com/" target="_blank">
-                <img id="facebook" src="images/facebook.webp" alt="Facebook Logo">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img id="instagram" src="images/instagram.webp" alt="Instagram Logo">
-            </a>
-            <a href="https://www.twitter.com/" target="_blank">
-                <img id="twitter" src="images/twitter.webp" alt="Twitter Logo">
-            </a>
+        <div class="footer-contact">
+            <p>Headquarters: Calle 35 Sur, Cozumel Turistico, 77670 Cozumel, Q.R., Mexico</p>
+            <p>Phone: (987)123-4567</p>
+            <p>Email: info@scoots.com</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><img id="facebook" src="images/facebook.webp"
+                        alt="Facebook logo"></a>
+                <a href="https://www.instagram.com" target="_blank"><img id="instagram" src="images/instagram.webp"
+                        alt="Instagram logo"></a>
+                <a href="https://www.twitter.com" target="_blank"><img id="twitter" src="images/twitter.webp"
+                        alt="Twitter logo"></a>
+            </div>
         </div>
-        <a src="attributions.html">Attributions</a>
+        <div class="site-details">
+            <p class="current-year"></p>
+            <p class="last-modified"></p>
+            <a src="attributions.html">Attributions</a>
+        </div>
     </footer>
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
     <script src="scripts/footer-dates.js"></script>
 </body>
 

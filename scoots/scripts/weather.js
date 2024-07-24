@@ -1,4 +1,4 @@
-const currentTemp = document.querySelector('#current-temp');
+const tempDesc = document.querySelector('#temp-desc');
 const weatherMain = document.querySelector('#weather-main')
 const weatherIcon = document.querySelector('#weather-icon');
 const weatherDesc = document.querySelector('#weather-desc');
@@ -27,14 +27,15 @@ function displayWeather(data) {
 
     const currentWeather = data.list[0];
 
-    currentTemp.innerHTML = `${Math.round(currentWeather.main.temp)}&deg;F`;
+    let temp = Math.round(currentWeather.main.temp);
+    let desc = currentWeather.weather[0].description;
+    tempDesc.innerHTML = `${temp}&deg;F and ${desc}`;
+    weatherMain.innerHTML = currentWeather.weather[0].main;
     const icon = currentWeather.weather[0].icon;
     const iconsrc = `https://openweathermap.org/img/w/${icon}.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', currentWeather.weather[0].main);
-    weatherDesc.textContent = currentWeather.weather[0].description;
-    humidity.textContent = `Humidity: ${currentWeather.main.humidity}%`;
-    weatherMain.innerHTML = currentWeather.weather[0].main;
+    humidity.textContent = `Humidity - ${currentWeather.main.humidity}%`;
 }
 
 function displayForecast(data) {
@@ -64,7 +65,7 @@ function displayForecast(data) {
         highTemp.innerHTML = `Today's high is ${Math.round(maxTemp)}&deg;F.`;
     }
 
-    nextDayTemp.innerHTML = `${Math.round(nextDayForecast.main.temp)}&deg;F`;
+    nextDayTemp.innerHTML = `Tomorrow at 3 pm - ${Math.round(nextDayForecast.main.temp)}&deg;F`;
 }
 
 // function displayForecast(data) {
