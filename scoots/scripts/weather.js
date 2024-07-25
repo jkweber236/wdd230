@@ -63,7 +63,7 @@ function displayForecast(data) {
             forecast.innerHTML = `Tomorrow at 3pm - ${Math.round(element.main.temp)}&deg;F`;
         }
     });
-    console.log(highest);
+
     if (highest > 0) {
         hightemp.innerHTML = `Today's high is ${Math.round(highest)}&deg;F`
     } else {

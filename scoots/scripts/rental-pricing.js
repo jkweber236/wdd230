@@ -23,7 +23,6 @@ function displayPrices(rentals) {
         let reserveHalfDay = document.createElement("td");
         let reserveFullDay = document.createElement("td");
 
-        console.log(rental.reservation.half);
         reserveName.innerHTML = rental.name;
         reserveMaxPersons.innerHTML = rental.maxriders;
         reserveHalfDay.innerHTML = rental.reservation.half;
