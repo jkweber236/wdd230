@@ -65,7 +65,15 @@
                 <label for="period">Period</label>
                 <input type="text" id="period" name="period" required>
                 <label for="rental-type">Rental Type</label>
-                <input type="text" id="rental-type" name="rental-type" required>
+                <select id="rental-type" name="rental-type" required>
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value="honda-metro">Honda Metro Scooter</option>
+                    <option value="honda-dio">Honda Dio Scooter</option>
+                    <option value="honda-pcx">Honda PCX150</option>
+                    <option value="honda-pioneer">Honda Pioneer ATV</option>
+                    <option value="jeep-4door">Jeep Wrangler - 4 Door</option>
+                    <option value="jeep-2door">Jeep Wrangler - 2 Door</option>
+                </select><br>
                 <label for="cruise-line">Cruise Line (If Applicable)</label>
                 <input type="text" id="cruise-line" name="cruise-line">
                 <label for="comments">Additional Comments<br>
