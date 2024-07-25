@@ -9,6 +9,10 @@
         text-shadow: 4px 4px 2px var(--accent-color);
     }
 
+    .hero picture {
+        width: 100%;
+    }
+
     #weather {
         width: 50%;
         grid-column: 1/3;
