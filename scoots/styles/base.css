@@ -396,3 +396,13 @@ footer a:last-of-type {
     text-decoration: none;
     font-weight: bold;
 }
+
+#attributions {
+    text-align: left;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+#attributions ul {
+    padding-left: 0;
+}
