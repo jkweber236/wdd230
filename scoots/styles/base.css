@@ -7,7 +7,6 @@
     --accent-color: #622227;
     --header-font: "Montserrat";
     --main-font: "Short Stack";
-    /* #EDB680; #f8d4b1 #fadcbf*/
 }
 
 body {
@@ -212,8 +211,10 @@ tr:nth-child(odd) {
     background-color: var(--background-color)
 }
 
-#reservations h2 {
-    margin-top: 2rem;
+#reservations h1 {
+    margin: 2rem auto 0;
+    width: 70%;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -244,15 +245,29 @@ li {
     padding: 0.25rem;
 }
 
+#contact ul p:last-child {
+    padding: 5rem;
+}
+
 #contact-us {
-    width: 70%;
-    margin: 2rem auto;
+    width: 75%;
+    margin: 1rem auto 2rem;
     text-align: left;
 }
 
 #contact-us input {
     width: 200px;
     margin-left: 10px;
+}
+
+#send-message {
+    display: flex;
+    margin: 2rem auto 0;
+}
+
+table label:last-of-type {
+    margin-left: 0;
+    margin: auto;
 }
 
 #reservations fieldset {
@@ -282,8 +297,14 @@ li {
     width: 80%;
 }
 
+#contact h1 {
+    margin-top: 2rem;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
 label {
-    margin: 0.75rem 0 0;
+    margin: 1rem 0 0;
     display: block;
     margin-left: 10px;
 }
@@ -309,6 +330,18 @@ caption {
     caption-side: bottom;
 }
 
+#thank-you {
+    padding: 5rem 2rem;
+    width: 75%;
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+#thank-you h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
 footer {
     background-color: var(--primary-color);
     margin-top: 1rem;
@@ -317,6 +350,12 @@ footer {
     grid-template-rows: 2fr 1fr;
     padding: 0.75rem;
     text-align: center;
+}
+
+.active {
+    background-color: var(--accent-color);
+    padding: 1rem;
+    color: var(--secondary-color);
 }
 
 footer .logo {

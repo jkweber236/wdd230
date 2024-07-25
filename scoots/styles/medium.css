@@ -62,7 +62,7 @@
         width: 70%;
     }
 
-    #reservations h2,
+    #reservations h1,
     #reservations ul {
         grid-column: 2/3;
         grid-row: 1/2;
@@ -80,9 +80,9 @@
         width: 100%;
     }
 
-    #reservations h2 {
+    #reservations h1 {
         width: 85%;
-        margin: 2rem auto 1rem;
+        margin: 2rem auto 1.25rem;
     }
 
     #reservations li {
@@ -106,5 +106,21 @@
         width: 70%;
     }
 
+    #contact p {
+        width: 80%;
+    }
+
+    #contact li {
+        width: 80%;
+    }
+
+    #contact iframe {
+        margin: 1rem auto 1.75rem;
+    }
+
+    .active {
+        color: var(--primary-color);
+        border-radius: 10px;
+    }
 
 }
