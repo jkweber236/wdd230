@@ -140,7 +140,7 @@ main {
     margin-bottom: 2rem;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     font-size: 1.5rem;
     z-index: 10;
@@ -226,6 +226,17 @@ li {
     margin: auto;
 }
 
+#rentals h1 {
+    margin-top: 2rem;
+    color: var(--accent-color);
+    padding-bottom: 0;
+    font-size: 1.5rem;
+}
+
+#rentals table {
+    margin: 1rem 1.5rem 2rem;
+}
+
 #contact p {
     width: 90%;
     margin: auto;
@@ -253,6 +264,11 @@ li {
     color: var(--accent-color);
     font-weight: bold;
     text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+#reservations img {
+    width: 80%;
+    height: auto;
 }
 
 #contact-us fieldset {
